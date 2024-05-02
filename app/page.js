@@ -1,3 +1,11 @@
+import Link from 'next/link'
+
 export default function Home() {
-  return <h1 style={{ color: 'blue' }}>Hello World!</h1>
+  return (
+    <div className='container'>
+      <Link href='/' style={{ color: 'red' }}>
+        Hello World!!!
+      </Link>
+    </div>
+  )
 }
