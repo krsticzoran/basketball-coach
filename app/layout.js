@@ -1,3 +1,4 @@
+import MainHeader from '@/components/main-header'
 import { Inter } from 'next/font/google'
 import '@/styles/globals.scss'
 
@@ -12,7 +13,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <MainHeader />
+        {children}
+      </body>
     </html>
   )
 }
