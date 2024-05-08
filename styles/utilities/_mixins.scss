@@ -65,3 +65,16 @@ $spacing-values: (
     @include padding(padding-left, $val);
   }
 }
+
+/* ----- Font size -----*/
+$font-sizes: (
+  p: 1.6,
+  lg: 2,
+  xl: 4,
+);
+
+@each $key, $val in $font-sizes {
+  .fs-#{$key} {
+    font-size: $val * 1rem;
+  }
+}
