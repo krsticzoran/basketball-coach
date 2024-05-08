@@ -19,3 +19,49 @@
 }
 
 /* ----- Spacing -----*/
+
+@mixin margin($property, $value) {
+  #{$property}: $value * 1rem;
+}
+
+@mixin padding($property, $value) {
+  #{$property}: $value * 1rem;
+}
+
+$spacing-values: (
+  0: 0,
+  1: 0.5,
+  2: 1,
+  3: 2,
+  5: 5,
+  10: 10,
+  15: 15,
+  25: 25,
+);
+
+@each $key, $val in $spacing-values {
+  .mt-#{$key} {
+    @include margin(margin-top, $val);
+  }
+  .mr-#{$key} {
+    @include margin(margin-right, $val);
+  }
+  .mb-#{$key} {
+    @include margin(margin-bottom, $val);
+  }
+  .ml-#{$key} {
+    @include margin(margin-left, $val);
+  }
+  .pt-#{$key} {
+    @include padding(padding-top, $val);
+  }
+  .pr-#{$key} {
+    @include padding(padding-right, $val);
+  }
+  .pb-#{$key} {
+    @include padding(padding-bottom, $val);
+  }
+  .pl-#{$key} {
+    @include padding(padding-left, $val);
+  }
+}

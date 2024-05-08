@@ -4,7 +4,9 @@ import bgImage from '../public/background.jpg'
 export default function Home() {
   return (
     <main style={{ display: 'flex' }}>
-      <div style={{ width: '50%' }}>salal</div>
+      <div style={{ width: '50%' }} className='pb-25'>
+        Some text will go here
+      </div>
       <Image
         src={bgImage}
         width={800}
