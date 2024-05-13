@@ -1,0 +1,35 @@
+@use '../../utilities/variables' as *;
+
+.button {
+  font-size: 1.2rem;
+  min-width: 20rem;
+
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  border-radius: 3px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.light {
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  background-color: transparent;
+  transition: all 0.2s;
+  &:hover {
+    color: #fff;
+    background-color: $primary-color;
+  }
+}
+
+.dark {
+  border: 1px solid $primary-color;
+  color: $secondary-color;
+  background-color: $primary-color;
+  transition: all 0.2s;
+  &:hover {
+    color: $primary-color;
+    background-color: $secondary-color;
+  }
+}

@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import classes from '@/styles/layout/main-header.module.scss'
+import classes from '@/styles/components/layout/header.module.scss'
 
-export default function MainHeader() {
+export default function Header() {
   return (
     <header className={classes.header}>
       <nav>

@@ -32,7 +32,8 @@ $spacing-values: (
   0: 0,
   1: 0.5,
   2: 1,
-  3: 2,
+  3: 1.5,
+  4: 3,
   5: 5,
   10: 10,
   15: 15,
@@ -52,6 +53,14 @@ $spacing-values: (
   .ml-#{$key} {
     @include margin(margin-left, $val);
   }
+  .mx-#{$key} {
+    @include margin(margin-left, $val);
+    @include margin(margin-right, $val);
+  }
+  .my-#{$key} {
+    @include margin(margin-top, $val);
+    @include margin(margin-bottom, $val);
+  }
   .pt-#{$key} {
     @include padding(padding-top, $val);
   }
@@ -64,17 +73,12 @@ $spacing-values: (
   .pl-#{$key} {
     @include padding(padding-left, $val);
   }
-}
-
-/* ----- Font size -----*/
-$font-sizes: (
-  p: 1.6,
-  lg: 2,
-  xl: 4,
-);
-
-@each $key, $val in $font-sizes {
-  .fs-#{$key} {
-    font-size: $val * 1rem;
+  .px-#{$key} {
+    @include padding(padding-left, $val);
+    @include padding(padding-right, $val);
+  }
+  .py-#{$key} {
+    @include padding(padding-top, $val);
+    @include padding(padding-bottom, $val);
   }
 }

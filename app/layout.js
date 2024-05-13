@@ -1,4 +1,4 @@
-import MainHeader from '@/components/main-header'
+import Header from '@/components/layout/header'
 import { Inter } from 'next/font/google'
 import '@/styles/globals.scss'
 
@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <MainHeader />
+        <Header />
         {children}
       </body>
     </html>
