@@ -24,6 +24,7 @@ body {
 }
 
 body {
+  color: #343a40;
   position: relative;
 }
 h1 {
@@ -42,13 +43,4 @@ a {
 }
 
 main {
-  color: $primary-color;
-
-  @include tablet {
-    color: $secondary-color;
-  }
-
-  @include mobile {
-    color: $third-color;
-  }
 }
