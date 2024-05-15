@@ -1,0 +1,27 @@
+@use '../utilities/variables' as *;
+
+.hero {
+  color: $white-color;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 4rem;
+
+  .text {
+    z-index: 2;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    object-position: top;
+  }
+}

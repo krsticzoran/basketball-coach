@@ -1,6 +1,11 @@
 @use '../../utilities/variables' as *;
 
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
   ul {
     display: flex;
     li {
