@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import bgImage from '../public/jokic3.jpeg'
+import bgImage from '../public/jokic.jpeg'
 import Button from '@/components/ui/button'
 import classes from '@/styles/pages/home.module.scss'
 
