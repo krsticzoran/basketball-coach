@@ -27,19 +27,16 @@ body {
   position: relative;
 }
 h1 {
-  font-size: 4rem;
+  @include font-size(xxl);
 }
 h5 {
-  font-size: 2rem;
+  @include font-size(l);
 }
 p {
-  font-size: 1.6rem;
+  @include font-size(s);
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-main {
 }

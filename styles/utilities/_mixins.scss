@@ -7,7 +7,7 @@
 }
 
 @mixin tablet {
-  @media (min-width: 768px) and (max-width: 991px) {
+  @media (max-width: 991px) {
     @content;
   }
 }
@@ -81,4 +81,18 @@ $spacing-values: (
     @include padding(padding-top, $val);
     @include padding(padding-bottom, $val);
   }
+}
+
+/* ----- Font Size -----*/
+
+$font-size-values: (
+  xxl: 4,
+  l: 2,
+  s: 1.6,
+  xs: 1.2,
+);
+
+@mixin font-size($key) {
+  $value: map-get($font-size-values, $key);
+  font-size: $value * 1rem;
 }
