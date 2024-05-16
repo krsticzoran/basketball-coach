@@ -1,7 +1,9 @@
 @use '../../utilities/variables' as *;
+@use '../../utilities/mixins' as *;
 
 .button {
-  font-size: 1.2rem;
+  @include font-size(xs);
+  @include spacing(padding, 3, 4);
   min-width: 20rem;
 
   text-align: center;

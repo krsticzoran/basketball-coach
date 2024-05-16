@@ -9,8 +9,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  @include padding(padding-left, 5);
-  @include padding(padding-right, 5);
+  @include spacing(padding, 0, 5);
 
   .text {
     z-index: 2;
