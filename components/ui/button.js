@@ -1,11 +1,9 @@
 import Link from 'next/link'
 import classes from '@/styles/components/ui/button.module.scss'
 
-export default function Button({ href, color, children }) {
+export default function Button({ href, children }) {
   return (
-    <button
-      className={`${classes.button} ${color === 'dark' ? classes.dark : classes.light} mt-2 px-4 py-3`}
-    >
+    <button className={classes.button}>
       <Link href={href}>{children}</Link>
     </button>
   )

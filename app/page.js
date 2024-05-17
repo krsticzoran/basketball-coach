@@ -13,9 +13,7 @@ export default function Home() {
             <span> Work with a coach who trained Jokic to success!</span>
             <span>Train with Sinisa Savovic now</span>
           </h5>
-          <Button href='/contact/' color='dark'>
-            Book Your Session
-          </Button>
+          <Button href='/contact/'>Book Your Session</Button>
         </div>
         <div>
           <Image src={bgImage} priority alt='Nikola Jokic' />

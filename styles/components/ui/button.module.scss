@@ -3,35 +3,23 @@
 
 .button {
   @include font-size(xs);
-  @include spacing(padding, 3, 4);
-  min-width: 20rem;
-
   text-align: center;
   text-decoration: none;
-  text-overflow: ellipsis;
-  border-radius: 3px;
-  letter-spacing: 2px;
+  border-radius: 0;
+  letter-spacing: 1.4px;
   text-transform: uppercase;
-}
+  transition: 0.2;
+  color: $white;
+  border: 2px solid $white;
 
-.light {
-  border: 1px solid $primary-color;
-  color: $primary-color;
-  background-color: transparent;
-  transition: all 0.2s;
-  &:hover {
-    color: #fff;
-    background-color: $primary-color;
-  }
-}
+  background-color: rgba(0, 0, 0, 0);
+  @include spacing(padding, 3, 4);
 
-.dark {
-  border: 1px solid $primary-color;
-  color: $secondary-color;
-  background-color: $primary-color;
-  transition: all 0.2s;
+  font-weight: 500;
+  line-height: 140%;
+
   &:hover {
-    color: $primary-color;
-    background-color: $secondary-color;
+    color: $background;
+    background-color: $white;
   }
 }
