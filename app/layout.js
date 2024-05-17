@@ -1,8 +1,12 @@
 import Header from '@/components/layout/header'
-import { Inter } from 'next/font/google'
+import { Inter, Roboto_Condensed } from 'next/font/google'
 import '@/styles/globals.scss'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const robotoCondensed = Roboto_Condensed({
+  subsets: ['latin'],
+  variable: '--font-roboto-condensed',
+})
 
 export const metadata = {
   title: 'Basketball Coach Siniša Savović ',
@@ -13,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body className={`${robotoCondensed.variable} ${inter.variable}`}>
         <Header />
         {children}
       </body>
