@@ -13,8 +13,11 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   @include font-size(s);
+  border-bottom: 1px solid $border;
 
-  @include spacing(padding, 3, 5);
+  .active {
+    color: $accent;
+  }
 
   ul {
     display: flex;
@@ -23,13 +26,44 @@
 
     li {
       color: $white;
-      @include spacing(padding-left, 3);
+      @include spacing(padding, 3, 4);
+
+      background-color: $transparent;
+      transition: 0.2;
+      min-height: 100%;
+
+      &:not(:last-child) {
+        border-right: 1px solid $border;
+      }
+
+      &:first-child {
+        border-left: 1px solid $border;
+      }
+
+      &:last-child {
+        background-color: $background;
+        &:hover {
+          background-color: $additional-background;
+        }
+      }
+
+      &:hover {
+        background-color: $additional-background;
+      }
 
       img {
-        height: 4rem;
-        width: 4rem;
+        height: 2rem;
+        width: 2rem;
         opacity: 0.6;
+        filter: brightness(0) saturate(100%) invert(100%) sepia(4%)
+          saturate(7465%) hue-rotate(178deg) brightness(103%) contrast(99%);
       }
+    }
+
+    .logo {
+      border-left: none !important;
+      border-right: 1px solid $border;
+      background-color: $transparent !important;
     }
   }
 }

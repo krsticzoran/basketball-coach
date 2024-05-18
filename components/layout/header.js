@@ -1,35 +1,54 @@
+'use client'
+
 import Link from 'next/link'
 import classes from '@/styles/components/layout/header.module.scss'
 import instagram from '../../public/instagram.png'
 import Image from 'next/image'
-import icon from '../../public/ball.png'
+import { usePathname } from 'next/navigation'
 
 export default function Header() {
+  const path = usePathname()
+  console.log(path)
+
   return (
     <header className={classes.header}>
-      <div>
-        <ul>
-          <li>
-            <Link href=''>
-              <Image src={icon} alt='icon' />
-            </Link>
-          </li>
-          <li>individual basketball practices</li>
-        </ul>
-      </div>
+      <ul>
+        <li className={classes.logo}>some logo</li>
+      </ul>
+
       <nav>
         <ul>
           <li>
-            <Link href='/'>Home</Link>
+            <Link
+              href='/'
+              className={path === '/' ? classes.active : undefined}
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <Link href='/about'>About</Link>
+            <Link
+              href='/about'
+              className={path === '/about' ? classes.active : undefined}
+            >
+              About
+            </Link>
           </li>
           <li>
-            <Link href='/gallery'>Gallery</Link>
+            <Link
+              href='/gallery'
+              className={path === '/gallery' ? classes.active : undefined}
+            >
+              Gallery
+            </Link>
           </li>
           <li>
-            <Link href='/contact'>Contact</Link>
+            <Link
+              href='/contact'
+              className={path === '/contact' ? classes.active : undefined}
+            >
+              Contact
+            </Link>
           </li>
           <li>
             <Link href='https://www.instagram.com/sawa_ska/'>
