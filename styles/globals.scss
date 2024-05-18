@@ -1,14 +1,6 @@
 @use 'utilities/variables' as *;
 @use 'utilities/mixins' as *;
 
-:root {
-  --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -26,17 +18,23 @@ body {
   background-color: $background;
   color: $paragraphs;
   font-family: var(--font-inter);
-  font-size: 16px;
+  @include font-size(s);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-roboto-condensed);
+}
+
 h1 {
   @include font-size(xxl);
-  font-family: var(--font-roboto-condensed);
 }
 h5 {
   @include font-size(l);
-}
-p {
-  @include font-size(s);
 }
 
 a {
