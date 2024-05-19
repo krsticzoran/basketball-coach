@@ -13,6 +13,22 @@
 
   .text {
     z-index: 2;
+    max-width: 60rem;
+    h1 {
+      font-size: 7rem;
+
+      span {
+        color: $accent;
+      }
+    }
+
+    p {
+      @include spacing(margin-bottom, 3);
+      line-height: 175%;
+      color: $paragraphs;
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   img {

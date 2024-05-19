@@ -8,11 +8,16 @@ export default function Home() {
     <main>
       <section className={classes.hero}>
         <div className={classes.text}>
-          <h1>Ready to Train like an MVP? </h1>
-          <h5>
-            <span> Work with a coach who trained Jokic to success!</span>
-            <span>Train with Sinisa Savovic now</span>
-          </h5>
+          <h1>
+            Unlock Your
+            <span> MVP Potential</span>
+          </h1>
+          <p>
+            <span> Train with Siniša Savović, Jokić's First Coach.</span>
+            <span>
+              Join our sessions and let's make your basketball dreams a reality.
+            </span>
+          </p>
           <Button href='/contact/'>Book Your Session</Button>
         </div>
         <div>
