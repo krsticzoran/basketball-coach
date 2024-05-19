@@ -13,7 +13,9 @@ export default function Header() {
   return (
     <header className={classes.header}>
       <ul>
-        <li className={classes.logo}>some logo</li>
+        <li className={classes.logo}>
+          <Link href='/'>some logo</Link>
+        </li>
       </ul>
 
       <nav>
@@ -42,13 +44,8 @@ export default function Header() {
               Gallery
             </Link>
           </li>
-          <li>
-            <Link
-              href='/contact'
-              className={path === '/contact' ? classes.active : undefined}
-            >
-              Contact
-            </Link>
+          <li className={classes.session}>
+            <Link href='/book-a-session'>book a session</Link>
           </li>
           <li>
             <Link href='https://www.instagram.com/sawa_ska/'>

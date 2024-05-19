@@ -43,12 +43,12 @@
       &:last-child {
         background-color: $background;
         &:hover {
-          background-color: $additional-background;
+          background-color: $dark-hover;
         }
       }
 
       &:hover {
-        background-color: $additional-background;
+        background-color: $dark-hover;
       }
 
       img {
@@ -64,6 +64,18 @@
       border-left: none !important;
       border-right: 1px solid $border;
       background-color: $transparent !important;
+
+      &:hover {
+        background-color: $dark-hover !important;
+      }
+    }
+    .session {
+      background-color: $accent;
+      color: $background;
+      border-bottom: 1px solid $accent;
+      &:hover {
+        background-color: $white;
+      }
     }
   }
 }

@@ -18,7 +18,7 @@ export default function Home() {
               Join our sessions and let's make your basketball dreams a reality.
             </span>
           </p>
-          <Button href='/contact/'>Book Your Session</Button>
+          <Button href='/contact/'>get started</Button>
         </div>
         <div>
           <Image src={bgImage} priority alt='Nikola Jokic' />
