@@ -42,24 +42,9 @@
   }
 }
 
-.subtitle {
-  color: $accent;
-  display: flex;
-  align-items: center;
-  @include spacing(margin-bottom, 2);
-  .line {
-    width: 26px;
-    height: 2px;
-    background-color: $accent;
-  }
-  .text {
-    @include spacing(margin, 0, 2);
-    text-transform: uppercase;
-  }
-}
-
 .about {
   @include section($additional-background);
+  @include subtitle();
 
   .container {
     @include container;
@@ -88,4 +73,5 @@
 
 .services {
   @include section($background);
+  @include subtitle();
 }
