@@ -46,7 +46,9 @@ $spacing-values: (
   4: 3,
   5: 5,
   10: 10,
+  13: 13,
   15: 15,
+  20: 20,
   25: 25,
 );
 
@@ -72,4 +74,13 @@ $font-size-values: (
 @mixin font-size($key) {
   $value: map-get($font-size-values, $key);
   font-size: $value * 1rem;
+}
+
+/* ----- Container -----*/
+
+@mixin container() {
+  max-width: 120rem;
+  display: grid;
+  align-items: center;
+  margin: 0 auto;
 }

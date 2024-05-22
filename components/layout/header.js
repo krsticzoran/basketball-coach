@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation'
 
 export default function Header() {
   const path = usePathname()
-  console.log(path)
+ 
 
   return (
     <header className={classes.header}>
