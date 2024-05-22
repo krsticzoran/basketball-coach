@@ -59,9 +59,7 @@
 }
 
 .about {
-  background-color: $additional-background;
-  border-top: 1px solid $additional-border;
-  @include spacing(padding, 13, 3);
+  @include section($additional-background);
 
   .container {
     @include container;
@@ -89,6 +87,5 @@
 }
 
 .services {
-  border-top: 1px solid $additional-border;
-  @include spacing(padding, 13, 3);
+  @include section($background);
 }

@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 /* ----- Media Query -----*/
 
 @mixin xs {
@@ -83,4 +85,12 @@ $font-size-values: (
   display: grid;
   align-items: center;
   margin: 0 auto;
+}
+
+/* ----- Section -----*/
+
+@mixin section($background-color) {
+  background-color: $background-color;
+  border-top: 1px solid $additional-border;
+  @include spacing(padding, 13, 3);
 }
