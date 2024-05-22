@@ -42,7 +42,23 @@
   }
 }
 
-.welcome {
+.subtitle {
+  color: $accent;
+  display: flex;
+  align-items: center;
+  @include spacing(margin-bottom, 2);
+  .line {
+    width: 26px;
+    height: 2px;
+    background-color: $accent;
+  }
+  .text {
+    @include spacing(margin, 0, 2);
+    text-transform: uppercase;
+  }
+}
+
+.about {
   background-color: $additional-background;
   border-top: 1px solid #343434;
   @include spacing(padding, 13, 3);
@@ -62,21 +78,6 @@
       padding-left: 10%;
     }
 
-    .subtitle {
-      color: $accent;
-      display: flex;
-      align-items: center;
-      @include spacing(margin-bottom, 2);
-      .line {
-        width: 26px;
-        height: 2px;
-        background-color: $accent;
-      }
-      .text {
-        @include spacing(margin, 0, 2);
-        text-transform: uppercase;
-      }
-    }
     h2 {
       @include spacing(margin-bottom, 3);
     }
@@ -85,4 +86,9 @@
       max-width: 47rem;
     }
   }
+}
+
+.services {
+  border-top: 1px solid #343434;
+  @include spacing(padding, 13, 3);
 }

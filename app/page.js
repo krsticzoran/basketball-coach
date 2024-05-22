@@ -25,7 +25,7 @@ export default function Home() {
           <Image src={bgImage} priority alt='Nikola Jokic' />
         </div>
       </section>
-      <section className={classes.welcome}>
+      <section className={classes.about}>
         <div className={classes.container}>
           <div>
             <Image src={welcomeImg} alt='Sinisa Savovic' />
@@ -47,6 +47,15 @@ export default function Home() {
             </p>
             <Button href='/about/'>Find Out More</Button>
           </div>
+        </div>
+      </section>
+      <section className={classes.services}>
+        <div className={classes.container}>
+          <div className={classes.subtitle}>
+            <div className={classes.line}></div>
+            <div className={classes.text}>services</div>
+          </div>
+          <h2>HELPING YOU REACH HIGHER AND ACHIEVE MORE</h2>
         </div>
       </section>
     </main>
