@@ -3,6 +3,9 @@ import bgImage from '../public/jokic.jpeg'
 import Button from '@/components/ui/button'
 import classes from '@/styles/pages/home.module.scss'
 import welcomeImg from '../public/Savovic.jpeg'
+import services1 from '../public/services1.jpeg'
+import services2 from '../public/services2.jpeg'
+import services3 from '../public/services3.jpeg'
 
 export default function Home() {
   return (
@@ -55,7 +58,20 @@ export default function Home() {
             <div className={classes.line}></div>
             <div className={classes.text}>services</div>
           </div>
-          <h2>HELPING YOU REACH HIGHER AND ACHIEVE MORE</h2>
+          <h2 className={classes.heading}>
+            HELPING YOU REACH HIGHER AND ACHIEVE MORE
+          </h2>
+          <div className={classes.grid}>
+            <div>
+              <Image src={services1} />
+            </div>
+            <div>
+              <Image src={services2} />
+            </div>
+            <div>
+              <Image src={services3} />
+            </div>
+          </div>
         </div>
       </section>
     </main>

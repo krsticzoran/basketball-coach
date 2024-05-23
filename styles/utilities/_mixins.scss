@@ -82,8 +82,6 @@ $font-size-values: (
 
 @mixin container() {
   max-width: 120rem;
-  display: grid;
-  align-items: center;
   margin: 0 auto;
 }
 
@@ -113,4 +111,13 @@ $font-size-values: (
       text-transform: uppercase;
     }
   }
+}
+
+/* ----- Grid -----*/
+
+@mixin grid($columns) {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat($columns, 1fr);
+  grid-column-gap: 4vmin;
 }
