@@ -6,6 +6,7 @@ import welcomeImg from '../public/Savovic.jpeg'
 import services1 from '../public/services1.jpeg'
 import services2 from '../public/services2.jpeg'
 import services3 from '../public/services3.jpeg'
+import personal from '../public/personal.svg'
 
 export default function Home() {
   return (
@@ -64,12 +65,36 @@ export default function Home() {
           <div className={classes.grid}>
             <div className={classes[`service-one`]}>
               <Image src={services1} />
+              <div className={classes[`services-text`]}>
+                <Image src={personal} />
+                <h4>PERSONAL TRAINING</h4>
+              </div>
+              <p>
+                Lacus duis consectetur elementum pharetra, dictumst dictum nulla
+                adipiscing.
+              </p>
             </div>
             <div className={classes[`service-two`]}>
               <Image src={services2} />
+              <div className={classes[`services-text`]}>
+                <Image src={personal} />
+                <h4>Basketball camp</h4>
+              </div>
+              <p>
+                Lacus duis consectetur elementum pharetra, dictumst dictum nulla
+                adipiscing.
+              </p>
             </div>
             <div className={classes[`service-three`]}>
               <Image src={services3} />
+              <div className={classes[`services-text`]}>
+                <Image src={personal} />
+                <h4>Team</h4>
+              </div>
+              <p>
+                Lacus duis consectetur elementum pharetra, dictumst dictum nulla
+                adipiscing.
+              </p>
             </div>
           </div>
         </div>
