@@ -116,9 +116,9 @@ $font-size-values: (
 
 /* ----- Grid -----*/
 
-@mixin grid($columns) {
+@mixin grid($columns, $position) {
   display: grid;
-  align-items: center;
+  align-items: $position;
   grid-template-columns: repeat($columns, 1fr);
   grid-column-gap: 4vmin;
 }

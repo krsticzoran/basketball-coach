@@ -48,7 +48,7 @@
 
   .container {
     @include container;
-    @include grid(2);
+    @include grid(2, center);
 
     img {
       width: 100%;
@@ -77,16 +77,16 @@
     @include container;
     .heading {
       max-width: 56rem;
-      @include spacing(margin-bottom, 3);
     }
     .grid {
-      @include grid(3);
+      @include grid(3, start);
+      margin-top: 0;
 
       .service-one {
-        margin-top: 200px;
+        padding-top: 100px;
       }
       .service-two {
-        margin-top: 50px;
+        padding-top: 50px;
       }
 
       img {

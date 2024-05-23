@@ -68,7 +68,7 @@ export default function Home() {
             <div className={classes[`service-two`]}>
               <Image src={services2} />
             </div>
-            <div>
+            <div className={classes[`service-three`]}>
               <Image src={services3} />
             </div>
           </div>
