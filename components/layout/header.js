@@ -1,15 +1,10 @@
-'use client'
-
 import Link from 'next/link'
 import classes from '@/styles/components/layout/header.module.scss'
 import instagram from '../../public/instagram.png'
 import Image from 'next/image'
-import { usePathname } from 'next/navigation'
+import NavLink from './nav-link'
 
 export default function Header() {
-  const path = usePathname()
- 
-
   return (
     <header className={classes.header}>
       <ul>
@@ -21,35 +16,20 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <Link
-              href='/'
-              className={path === '/' ? classes.active : undefined}
-            >
-              Home
-            </Link>
+            <NavLink href='/'>Home</NavLink>
           </li>
           <li>
-            <Link
-              href='/about'
-              className={path === '/about' ? classes.active : undefined}
-            >
-              About
-            </Link>
+            <NavLink href='/about'>About</NavLink>
           </li>
           <li>
-            <Link
-              href='/gallery'
-              className={path === '/gallery' ? classes.active : undefined}
-            >
-              Gallery
-            </Link>
+            <NavLink href='/gallery'>Gallery</NavLink>
           </li>
           <li className={classes.session}>
             <Link href='/book-a-session'>book a session</Link>
           </li>
           <li>
             <Link href='https://www.instagram.com/sawa_ska/'>
-              <Image src={instagram} alt='Instagram' />
+              <Image src={instagram} priority alt='Instagram' />
             </Link>
           </li>
         </ul>
