@@ -101,6 +101,7 @@ $font-size-values: (
     display: flex;
     align-items: center;
     @include spacing(margin-bottom, 2);
+    @include font-size(s);
     .line {
       width: 26px;
       height: 2px;

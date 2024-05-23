@@ -18,6 +18,9 @@ body {
   background-color: $background;
   color: $paragraphs;
   font-family: var(--font-inter);
+}
+
+p {
   @include font-size(s);
 }
 

@@ -62,10 +62,10 @@ export default function Home() {
             HELPING YOU REACH HIGHER AND ACHIEVE MORE
           </h2>
           <div className={classes.grid}>
-            <div>
+            <div className={classes[`service-one`]}>
               <Image src={services1} />
             </div>
-            <div>
+            <div className={classes[`service-two`]}>
               <Image src={services2} />
             </div>
             <div>
