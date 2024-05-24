@@ -99,6 +99,26 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className={classes.full}>
+        <div className={classes[`left-block`]}>
+          <div className={classes.subtitle}>
+            <div className={classes.line}></div>
+            <div className={classes.text}>about</div>
+          </div>
+          <h2>Meet Siniša Savović: A Trailblazer in Basketball Excellence</h2>
+          <p>
+            Sinisa Savovic, a visionary leader in the realm of basketball
+            coaching, embodies a legacy of unparalleled expertise and
+            dedication. With a career spanning decades, his influence has shaped
+            the trajectories of countless athletes, including the likes of NBA
+            star Nikola Jokic. Dive deeper into Sinisa's journey, philosophy,
+            and unparalleled impact in the world of basketball.
+          </p>
+        </div>
+        <div>
+          <Image src={services3} />
+        </div>
+      </section>
     </main>
   )
 }

@@ -119,3 +119,24 @@
     }
   }
 }
+
+.full {
+  border-top: 1px solid $additional-border;
+  background-color: $additional-background;
+
+  @include subtitle();
+  @include grid(2, center);
+
+  .left-block {
+    @include spacing(padding, 13, 3);
+
+    h2 {
+      @include spacing(margin-bottom, 3);
+    }
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
