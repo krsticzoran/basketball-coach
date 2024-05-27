@@ -1,0 +1,19 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.contact {
+  @include container;
+  @include grid(2, center);
+  margin-top: 30rem;
+  .data {
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+      .full-width {
+        grid-column: span 2;
+      }
+    }
+  }
+}
