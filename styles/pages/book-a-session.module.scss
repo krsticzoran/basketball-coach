@@ -2,18 +2,60 @@
 @use '../utilities/mixins' as *;
 
 .contact {
-  @include container;
   @include grid(2, center);
-  margin-top: 30rem;
+  padding-top: 6.3rem;
+
   .data {
     form {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-column-gap: 20px;
-      grid-row-gap: 20px;
+      grid-column-gap: 2rem;
+      grid-row-gap: 2rem;
+
+      input,
+      textArea {
+        color: $white;
+        border: 1px solid $border;
+        background-color: $transparent;
+        @include spacing(padding, 0, 3);
+        @include font-size(s);
+      }
+
+      input {
+        height: 6rem;
+        &:focus {
+          outline: none;
+          border: 2px solid $white;
+        }
+      }
+
+      textArea {
+        height: 18rem;
+        @include spacing(padding-top, 3);
+
+        &:focus {
+          outline: none;
+          border: 2px solid $white;
+        }
+      }
+
       .full-width {
         grid-column: span 2;
       }
+    }
+  }
+  .image-container {
+    width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+    border: 1px solid $border;
+    border-bottom: none;
+    border-top: none;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
     }
   }
 }
