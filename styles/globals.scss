@@ -70,3 +70,20 @@ a {
   text-decoration: none;
   font-family: var(--font-inter);
 }
+
+.subtitle {
+  color: $accent;
+  display: flex;
+  align-items: center;
+  @include spacing(margin-bottom, 2);
+  @include font-size(s);
+  .line {
+    width: 26px;
+    height: 2px;
+    background-color: $accent;
+  }
+  .text {
+    @include spacing(margin, 0, 2);
+    text-transform: uppercase;
+  }
+}

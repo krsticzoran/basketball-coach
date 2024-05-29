@@ -44,7 +44,6 @@
 
 .about {
   @include section($additional-background);
-  @include subtitle();
 
   .container {
     @include container;
@@ -72,7 +71,7 @@
 
 .services {
   @include section($background);
-  @include subtitle();
+
   .container {
     @include container;
     .heading {
@@ -124,7 +123,6 @@
   border-top: 1px solid $additional-border;
   background-color: $additional-background;
 
-  @include subtitle();
   @include grid(2, center);
 
   .left-block {

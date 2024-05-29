@@ -7,6 +7,10 @@ export default function Contact() {
   return (
     <div className={classes.contact}>
       <div className={classes.data}>
+        <div className='subtitle'>
+          <div className='line'></div>
+          <div className='text'>about</div>
+        </div>
         <form>
           <input type='text' name='name' placeholder='First Name' required />
           <input type='text' name='surname' placeholder='Last Name' required />

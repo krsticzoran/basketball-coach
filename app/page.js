@@ -36,9 +36,9 @@ export default function Home() {
           </div>
 
           <div className={classes['block-right']}>
-            <div className={classes.subtitle}>
-              <div className={classes.line}></div>
-              <div className={classes.text}>about</div>
+            <div className='subtitle'>
+              <div className='line'></div>
+              <div className='text'>about</div>
             </div>
             <h2>Meet Siniša Savović: A Trailblazer in Basketball Excellence</h2>
             <p>
@@ -55,9 +55,9 @@ export default function Home() {
       </section>
       <section className={classes.services}>
         <div className={classes.container}>
-          <div className={classes.subtitle}>
-            <div className={classes.line}></div>
-            <div className={classes.text}>services</div>
+          <div className='subtitle'>
+            <div className='line'></div>
+            <div className='text'>services</div>
           </div>
           <h2 className={classes.heading}>
             HELPING YOU REACH HIGHER AND ACHIEVE MORE
@@ -101,9 +101,9 @@ export default function Home() {
       </section>
       <section className={classes.full}>
         <div className={classes[`left-block`]}>
-          <div className={classes.subtitle}>
-            <div className={classes.line}></div>
-            <div className={classes.text}>about</div>
+          <div className='subtitle'>
+            <div className='line'></div>
+            <div className='text'>services</div>
           </div>
           <h2>Meet Siniša Savović: A Trailblazer in Basketball Excellence</h2>
           <p>
