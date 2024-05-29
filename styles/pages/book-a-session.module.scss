@@ -6,6 +6,10 @@
   padding-top: 6.3rem;
 
   .data {
+    padding: 13rem 16%;
+    p {
+      @include spacing(margin-bottom, 4);
+    }
     form {
       display: grid;
       grid-template-columns: 1fr 1fr;

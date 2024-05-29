@@ -9,8 +9,13 @@ export default function Contact() {
       <div className={classes.data}>
         <div className='subtitle'>
           <div className='line'></div>
-          <div className='text'>about</div>
+          <div className='text'>Book a Session</div>
         </div>
+        <h1>Take the First Step to Success</h1>
+        <p>
+          Submit your details below, and Coach Siniša Savović will contact you
+          shortly to create a personalized plan for your success.
+        </p>
         <form>
           <input type='text' name='name' placeholder='First Name' required />
           <input type='text' name='surname' placeholder='Last Name' required />
@@ -28,12 +33,7 @@ export default function Contact() {
             className={classes[`full-width`]}
             required
           />
-          <textarea
-            placeholder='Message'
-            name='message'
-            maxLength={5000}
-            className={classes[`full-width`]}
-          />
+
           <button
             type='submit'
             className={`${classes[`full-width`]} ${style.button}`}
