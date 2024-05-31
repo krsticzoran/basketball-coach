@@ -19,7 +19,7 @@
       grid-row-gap: 2rem;
 
       input,
-      textArea {
+      textarea {
         color: $white;
         border: 1px solid $border;
         background-color: $transparent;
@@ -35,7 +35,7 @@
         height: 6rem;
       }
 
-      textArea {
+      textarea {
         height: 18rem;
         @include spacing(padding-top, 3);
         resize: none;
