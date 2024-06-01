@@ -1,0 +1,70 @@
+@use '../../utilities/variables' as *;
+@use '../../utilities/mixins' as *;
+
+.footer {
+  border-top: 1px solid $additional-border;
+
+  .top {
+    @include grid(4, center);
+    grid-column-gap: 0;
+    border-bottom: 1px solid $border;
+    align-items: stretch;
+
+    div {
+      padding: 14% 15% 24%;
+    }
+
+    div:not(:first-of-type) {
+      border-left: 1px solid $border;
+    }
+    h5 {
+      @include spacing(padding-bottom, 3);
+    }
+
+    ul {
+      list-style-type: none;
+      li {
+        padding-top: 7px;
+        padding-bottom: 7px;
+      }
+      a {
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
+        @include font-size(xs);
+        font-weight: 500;
+        line-height: 140%;
+        text-decoration: none;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    @include grid(2, center);
+    grid-column-gap: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    @include font-size(xs);
+    font-weight: 500;
+    line-height: 140%;
+    text-decoration: none;
+
+    a {
+      &:hover {
+        color: $white;
+      }
+    }
+
+    div {
+      padding: 3% 7.5%;
+      display: flex;
+      align-items: center;
+    }
+    div:not(:first-of-type) {
+      border-left: 1px solid $border;
+    }
+  }
+}

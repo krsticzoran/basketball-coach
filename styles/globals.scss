@@ -63,6 +63,15 @@ h2 {
 }
 h5 {
   @include font-size(l);
+  font-family:
+    Roboto Condensed,
+    sans-serif;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: -0.2px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 120%;
 }
 
 a {

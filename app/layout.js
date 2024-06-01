@@ -1,4 +1,5 @@
 import Header from '@/components/layout/header'
+import Footer from '@/components/layout/footer'
 import { Inter, Roboto_Condensed } from 'next/font/google'
 import '@/styles/globals.scss'
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
       <body className={`${robotoCondensed.variable} ${inter.variable}`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
