@@ -64,7 +64,9 @@ export default function Home() {
           </h2>
           <div className={classes.grid}>
             <div className={classes[`service-one`]}>
-              <Image src={services1} />
+              <div className={classes[`service-img`]}>
+                <Image src={services1} />
+              </div>
               <div className={classes[`services-text`]}>
                 <Image src={personal} />
                 <h4>PERSONAL TRAINING</h4>
@@ -75,7 +77,9 @@ export default function Home() {
               </p>
             </div>
             <div className={classes[`service-two`]}>
-              <Image src={services2} />
+              <div className={classes[`service-img`]}>
+                <Image src={services2} />
+              </div>
               <div className={classes[`services-text`]}>
                 <Image src={personal} />
                 <h4>Basketball camp</h4>
@@ -86,7 +90,9 @@ export default function Home() {
               </p>
             </div>
             <div className={classes[`service-three`]}>
-              <Image src={services3} />
+              <div className={classes[`service-img`]}>
+                <Image src={services3} />
+              </div>
               <div className={classes[`services-text`]}>
                 <Image src={personal} />
                 <h4>Team</h4>

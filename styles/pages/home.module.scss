@@ -88,11 +88,19 @@
         padding-top: 50px;
       }
 
+      .service-img {
+        overflow: hidden;
+      }
       img {
         width: 100%;
         height: 53rem;
         object-fit: cover;
         border: 1px solid $border;
+        transition: transform 400ms;
+
+        &:hover {
+          transform: scale(1.2);
+        }
       }
 
       .services-text {
