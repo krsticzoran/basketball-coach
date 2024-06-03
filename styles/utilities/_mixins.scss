@@ -101,3 +101,15 @@ $font-size-values: (
   grid-template-columns: repeat($columns, 1fr);
   grid-column-gap: 4vmin;
 }
+
+/* ----- H Tags -----*/
+
+@mixin h-tags($letter-spacing: -1px, $line-height: 106%) {
+  letter-spacing: $letter-spacing;
+  line-height: $line-height;
+
+  font-style: italic;
+  font-weight: 700;
+  color: $white;
+  text-transform: uppercase;
+}

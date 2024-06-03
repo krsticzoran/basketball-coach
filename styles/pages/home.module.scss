@@ -115,12 +115,6 @@
         }
 
         h4 {
-          @include font-size(xl);
-          font-style: italic;
-          font-weight: 700;
-          line-height: 116%;
-          color: $white;
-          text-transform: uppercase;
         }
       }
     }
