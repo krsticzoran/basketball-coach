@@ -113,9 +113,6 @@
           margin-right: 12px;
           border: none;
         }
-
-        h4 {
-        }
       }
     }
   }
@@ -137,6 +134,31 @@
 
   img {
     width: 100%;
+
     object-fit: cover;
+  }
+}
+
+.accordion {
+  @include section($background);
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    @include container;
+
+    .accordion-header {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+    h2 {
+      @include spacing(padding-bottom, 3);
+    }
   }
 }

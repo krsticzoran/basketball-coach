@@ -1,0 +1,23 @@
+.accordion {
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .display {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .close {
+    rotate: 45deg;
+    transition: rotate 0.3s ease;
+  }
+  .open {
+    rotate: 90deg;
+    transition: rotate 0.3s ease;
+  }
+}

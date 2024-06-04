@@ -7,6 +7,7 @@ import services1 from '../public/services1.jpeg'
 import services2 from '../public/services2.jpeg'
 import services3 from '../public/services3.jpeg'
 import personal from '../public/personal.svg'
+import Accordion from '@/components/ui/accordion'
 
 export default function Home() {
   return (
@@ -65,10 +66,10 @@ export default function Home() {
           <div className={classes.grid}>
             <div className={classes[`service-one`]}>
               <div className={classes[`service-img`]}>
-                <Image src={services1} />
+                <Image src={services1} alt='services' />
               </div>
               <div className={classes[`services-text`]}>
-                <Image src={personal} />
+                <Image src={personal} alt='services' />
                 <h4>PERSONAL TRAINING</h4>
               </div>
               <p>
@@ -78,10 +79,10 @@ export default function Home() {
             </div>
             <div className={classes[`service-two`]}>
               <div className={classes[`service-img`]}>
-                <Image src={services2} />
+                <Image src={services2} alt='services' />
               </div>
               <div className={classes[`services-text`]}>
-                <Image src={personal} />
+                <Image src={personal} alt='services' />
                 <h4>Basketball camp</h4>
               </div>
               <p>
@@ -91,10 +92,10 @@ export default function Home() {
             </div>
             <div className={classes[`service-three`]}>
               <div className={classes[`service-img`]}>
-                <Image src={services3} />
+                <Image src={services3} alt='services' />
               </div>
               <div className={classes[`services-text`]}>
-                <Image src={personal} />
+                <Image src={personal} alt='services' />
                 <h4>Team</h4>
               </div>
               <p>
@@ -122,7 +123,29 @@ export default function Home() {
           </p>
         </div>
         <div>
-          <Image src={services3} />
+          <Image src={services3} alt='services' />
+        </div>
+      </section>
+      <section className={classes.accordion}>
+        <div className={classes.container}>
+          <div className={classes[`accordion-header`]}>
+            <div className='subtitle'>
+              <div className='line'></div>
+              <div className='text'>Faq</div>
+            </div>
+
+            <h2>
+              FREQUENTLY ASKED
+              <br />
+              QUESTIONS
+            </h2>
+          </div>
+          <div className={classes[`accordion-grid`]}>
+            <Accordion
+              header='Can I cancel my membership?'
+              content='Iaculis id magna arcu nibh magna orci nibh. Lorem donec arcu imperdiet sodales ut non praesent tristique est. Nunc vulputate morbi elit convallis. Consectetur etiam enim dignissim arcu elementum. Arcu orci, malesuada proin ac. Ornare odio morbi laoreet.'
+            />
+          </div>
         </div>
       </section>
     </main>
