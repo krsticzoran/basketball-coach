@@ -48,6 +48,7 @@
   .container {
     @include container;
     @include grid(2, center);
+    grid-column-gap: 4vmin;
 
     img {
       width: 100%;
@@ -79,6 +80,7 @@
     }
     .grid {
       @include grid(3, start);
+      grid-column-gap: 4vmin;
       margin-top: 0;
 
       .service-one {
@@ -123,6 +125,7 @@
   background-color: $additional-background;
 
   @include grid(2, center);
+  grid-column-gap: 4vmin;
 
   .left-block {
     @include spacing(padding, 13, 3);

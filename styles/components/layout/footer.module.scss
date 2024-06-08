@@ -6,7 +6,6 @@
 
   .top {
     @include grid(4, center);
-    grid-column-gap: 0;
     border-bottom: 1px solid $border;
     align-items: stretch;
 
@@ -44,7 +43,6 @@
 
   .bottom {
     @include grid(2, center);
-    grid-column-gap: 0;
     text-transform: uppercase;
     letter-spacing: 1.4px;
     @include font-size(xs);

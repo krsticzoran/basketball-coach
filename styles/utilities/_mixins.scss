@@ -99,7 +99,6 @@ $font-size-values: (
   display: grid;
   align-items: $position;
   grid-template-columns: repeat($columns, 1fr);
-  grid-column-gap: 4vmin;
 }
 
 /* ----- H Tags -----*/
