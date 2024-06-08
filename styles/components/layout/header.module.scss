@@ -7,9 +7,7 @@
   top: 0;
   left: 0;
   z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex(space-between, center, row);
   letter-spacing: 1px;
   text-transform: uppercase;
   @include font-size(s);
@@ -20,9 +18,8 @@
   }
 
   ul {
-    display: flex;
+    @include flex(center, center, row);
     list-style-type: none;
-    align-items: center;
 
     li {
       color: $white;

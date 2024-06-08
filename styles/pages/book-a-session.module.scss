@@ -3,7 +3,6 @@
 
 .contact {
   @include grid(2, start);
-  grid-column-gap: 0;
   padding-top: 6.3rem;
   align-items: stretch;
 

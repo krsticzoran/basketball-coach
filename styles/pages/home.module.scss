@@ -6,9 +6,7 @@
   position: relative;
   height: 100vh;
   width: 100vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+  @include grid(2, center);
   @include spacing(padding, 0, 5);
 
   .text {
@@ -26,8 +24,7 @@
       @include spacing(margin-bottom, 3);
       line-height: 175%;
       color: $paragraphs;
-      display: flex;
-      flex-direction: column;
+      @include flex(start, start);
     }
   }
 
@@ -160,9 +157,9 @@
     }
 
     .accordion-grid {
-      display: grid;
       width: 100%;
-      grid-template-columns: 1fr;
+      @include grid(1, center);
+
       max-width: 79rem;
       gap: 1.5rem;
     }
