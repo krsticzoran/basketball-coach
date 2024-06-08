@@ -14,16 +14,20 @@ export default function Accordion({ header, content }) {
   }
   return (
     <div className={classes.accordion}>
-      {header}
-      <div className={classes.title} onClick={toggle}>
-        <Image
-          src={close}
-          alt='close'
-          className={isShowing ? classes.open : classes.close}
-        />
+      <div className={classes.header}>
+        <h6>{header}</h6>
+        <div className={classes.title} onClick={toggle}>
+          <Image
+            src={close}
+            alt='close'
+            className={isShowing ? classes.open : classes.close}
+          />
+        </div>
       </div>
-      <div className={isShowing ? classes.display : classes.hidden}>
-        {content}
+      <div className={content}>
+        <p className={isShowing ? classes.display : classes.hidden}>
+          {content}
+        </p>
       </div>
     </div>
   )

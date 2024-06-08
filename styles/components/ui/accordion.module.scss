@@ -1,4 +1,15 @@
+@use '../../utilities/variables' as *;
+@use '../../utilities/mixins' as *;
+
 .accordion {
+  border: 1px solid $border;
+  @include spacing(padding, 3, 4);
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
   img {
     width: 2rem;
     height: 2rem;
@@ -6,6 +17,7 @@
 
   .display {
     display: block;
+    @include spacing(margin-bottom, 3);
   }
 
   .hidden {

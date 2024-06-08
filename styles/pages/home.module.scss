@@ -142,23 +142,26 @@
 .accordion {
   @include section($background);
 
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
   .container {
     @include container;
 
+    width: 100%;
+    @include flex;
+
     .accordion-header {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
+      @include flex;
     }
+
     h2 {
       @include spacing(padding-bottom, 3);
+    }
+
+    .accordion-grid {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr;
+      max-width: 79rem;
+      gap: 1.5rem;
     }
   }
 }
