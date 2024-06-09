@@ -13,10 +13,11 @@ export default function Accordion({ header, content }) {
     setIsShowing(!isShowing)
   }
   return (
-    <div className={classes.accordion}>
+    <div className={classes.accordion} onClick={toggle}>
       <div className={classes.header}>
         <h6>{header}</h6>
-        <div className={classes.title} onClick={toggle}>
+
+        <div className={classes.title}>
           <Image
             src={close}
             alt='close'

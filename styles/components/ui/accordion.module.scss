@@ -8,6 +8,7 @@
   .header {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
   }
 
   img {
@@ -31,5 +32,11 @@
   .open {
     rotate: 90deg;
     transition: rotate 0.3s ease;
+  }
+  h6 {
+    @include font-size(l);
+    font-weight: 600;
+    line-height: 130%;
+    color: $white;
   }
 }
