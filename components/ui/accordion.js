@@ -26,9 +26,9 @@ export default function Accordion({ header, content }) {
         </div>
       </div>
       <div className={content}>
-        <p className={isShowing ? classes.display : classes.hidden}>
-          {content}
-        </p>
+        <div className={isShowing ? classes.display : classes.hidden}>
+          <p>{content}</p>
+        </div>
       </div>
     </div>
   )

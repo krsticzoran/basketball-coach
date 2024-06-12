@@ -17,12 +17,18 @@
   }
 
   .display {
-    display: block;
-    @include spacing(margin-bottom, 3);
+    overflow: hidden;
+    height: auto;
+    max-height: 1000px;
+
+    transition: max-height 3.6s ease;
   }
 
   .hidden {
-    display: none;
+    overflow: hidden;
+
+    max-height: 0;
+    transition: max-height 1.2s ease;
   }
 
   .close {
@@ -38,5 +44,9 @@
     font-weight: 600;
     line-height: 130%;
     color: $white;
+  }
+
+  p {
+    @include spacing(margin-top, 3);
   }
 }
