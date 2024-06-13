@@ -13,7 +13,10 @@ export default function Accordion({ header, content }) {
     setIsShowing(!isShowing)
   }
   return (
-    <div className={classes.accordion} onClick={toggle}>
+    <div
+      className={`${classes.accordion} ${isShowing ? classes['background-display'] : classes['background-hidden']}`}
+      onClick={toggle}
+    >
       <div className={classes.header}>
         <h6>{header}</h6>
 

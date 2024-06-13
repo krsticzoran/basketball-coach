@@ -1,6 +1,15 @@
 @use '../../utilities/variables' as *;
 @use '../../utilities/mixins' as *;
 
+.background-display {
+  background-color: rgb(30, 30, 30);
+  transition: background-color 1.2s ease;
+}
+.background-hidden {
+  background-color: transparent;
+  transition: background-color 2.4s ease;
+}
+
 .accordion {
   border: 1px solid $border;
   @include spacing(padding, 3, 4);
