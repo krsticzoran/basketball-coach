@@ -1,38 +1,20 @@
 import Image from 'next/image'
 import classes from '@/styles/pages/gallery.module.scss'
+import { getImage } from '@/lib/get-images'
+import { notFound } from 'next/navigation'
 
-const images = [
-  { path: '/Savovic.jpeg' },
-  { path: '/Savovic1.jpg' },
-  { path: '/jokic.jpeg' },
-  { path: '/Savovic1.jpg' },
-  { path: '/jokic.jpeg' },
-  { path: '/jokic.jpeg' },
-  { path: '/Savovic.jpeg' },
-  { path: '/Savovic1.jpg' },
-  { path: '/jokic.jpeg' },
-  { path: '/Savovic1.jpg' },
-  { path: '/jokic.jpeg' },
-  { path: '/jokic.jpeg' },
-  { path: '/Savovic.jpeg' },
-  { path: '/Savovic1.jpg' },
-  { path: '/jokic.jpeg' },
-  { path: '/Savovic1.jpg' },
-  { path: '/jokic.jpeg' },
-  { path: '/jokic.jpeg' },
-]
+export default async function Gallery() {
+  const data = await getImage()
 
-export default function Gallery() {
+  if (data.length === 0) {
+    notFound()
+  }
+
   return (
     <div className={classes.gallery}>
-      {images.map((image, index) => (
+      {data.map((image, index) => (
         <div key={index} className={classes['gallery-item']}>
-          <Image
-            src={image.path}
-            alt={`Image ${index + 1}`}
-            width={500}
-            height={300}
-          />
+          <Image src={image.url} alt={image.name} width={500} height={300} />
         </div>
       ))}
     </div>
