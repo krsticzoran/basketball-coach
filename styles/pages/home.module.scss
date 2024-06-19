@@ -24,7 +24,7 @@
       @include spacing(margin-bottom, 3);
       line-height: 175%;
       color: $paragraphs;
-      @include flex(start, start);
+      @include flex(flex-start, flex-start);
     }
   }
 
