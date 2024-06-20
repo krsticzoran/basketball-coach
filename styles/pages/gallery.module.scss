@@ -34,10 +34,6 @@
     position: relative;
 
     button {
-      position: absolute;
-      top: 0;
-      left: 0;
-
       width: 3.6rem;
       height: 3.6rem;
 
@@ -57,6 +53,25 @@
         color: $white;
         background-color: rgba(0, 0, 0, 0.8);
       }
+    }
+    .close {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .left {
+      width: 4.8rem;
+      height: 4.8rem;
+      position: absolute;
+      top: calc(50% - 2.4rem);
+      left: 0;
+    }
+    .right {
+      width: 4.8rem;
+      height: 4.8rem;
+      position: absolute;
+      top: calc(50% - 2.4rem);
+      right: 0;
     }
   }
 }

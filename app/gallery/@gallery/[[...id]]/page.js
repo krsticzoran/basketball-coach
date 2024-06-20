@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import classes from '@/styles/pages/gallery.module.scss'
 import { getImage } from '@/lib/get-images'
 import SvgClose from '@/components/ui/svg-close'
+import ArrowIcon from '@/components/ui/arrow-icon'
 
 export default async function Gallery({ params }) {
   const data = await getImage()
@@ -17,10 +18,16 @@ export default async function Gallery({ params }) {
       {params.id && (
         <div className={classes.modal}>
           <div className={classes.container}>
-            <button>
+            <button className={classes.close}>
               <Link href={'/gallery'}>
                 <SvgClose />
               </Link>
+            </button>
+            <button className={classes.left}>
+              <ArrowIcon direction='left' />
+            </button>
+            <button className={classes.right}>
+              <ArrowIcon direction='right' />
             </button>
             <Image
               src={data[params.id].url}
