@@ -24,10 +24,19 @@ export default async function Gallery({ params }) {
               </Link>
             </button>
             <button className={classes.left}>
-              <ArrowIcon direction='left' />
+              <Link
+                href={`/gallery/${params.id == 0 ? data.length - 1 : params.id - 1}`}
+              >
+                <ArrowIcon direction='left' />
+              </Link>
             </button>
+
             <button className={classes.right}>
-              <ArrowIcon direction='right' />
+              <Link
+                href={`/gallery/${params.id == data.length - 1 ? 0 : +params.id + 1}`}
+              >
+                <ArrowIcon direction='right' />
+              </Link>
             </button>
             <Image
               src={data[params.id].url}
