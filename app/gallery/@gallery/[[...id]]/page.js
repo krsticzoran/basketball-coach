@@ -12,10 +12,6 @@ export default async function Gallery({ params }) {
     notFound()
   }
 
-  const handlePrevClick = () => {
-    redirect(`/gallery/${params.id == 0 ? data.length - 1 : params.id - 1}`)
-  }
-
   return (
     <>
       <Modal params={params} data={data} />

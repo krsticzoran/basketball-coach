@@ -54,7 +54,7 @@ export default function Contact() {
           </form>
         </div>
         <div className={classes['image-container']}>
-          <Image src={trainingSession} />
+          <Image src={trainingSession} alt='training session' />
         </div>
       </div>
     </>
