@@ -5,43 +5,36 @@ import classes from '@/styles/pages/gallery.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 export default function Modal({ params, data }) {
   const router = useRouter()
-  const [isFadingOut, setIsFadingOut] = useState(false)
-  const [currentId, setCurrentId] = useState(params.id)
-
-  useEffect(() => {
-    setCurrentId(params.id)
-  }, [params.id])
+  const [fadeClass, setFadeClass] = useState('')
 
   const handlePrevClick = () => {
-    setIsFadingOut(true)
+    setFadeClass(classes['fade-out-prev'])
     setTimeout(() => {
       router.push(
         `/gallery/${params.id == 0 ? data.length - 1 : params.id - 1}`,
       )
-      setIsFadingOut(false)
-    }, 700) // Duration of the fade-out animation
+      setFadeClass(classes['fade-in-prev'])
+    }, 300)
   }
 
   const handleNextClick = () => {
-    setIsFadingOut(true)
+    setFadeClass(classes['fade-out-next'])
     setTimeout(() => {
       router.push(
         `/gallery/${params.id == data.length - 1 ? 0 : +params.id + 1}`,
       )
-      setIsFadingOut(false)
-    }, 0) // Duration of the fade-out animation
+      setFadeClass(classes['fade-in-next'])
+    }, 300)
   }
 
   return (
     <>
-      {currentId && (
-        <div
-          className={`${classes.modal} ${isFadingOut ? classes['fade-out'] : classes['fade-in']}`}
-        >
+      {params.id && (
+        <div className={classes.modal}>
           <div className={classes.container}>
             <button className={classes.close}>
               <Link href={'/gallery'}>
@@ -55,12 +48,14 @@ export default function Modal({ params, data }) {
             <button className={classes.right} onClick={handleNextClick}>
               <ArrowIcon direction='right' />
             </button>
-            <Image
-              src={data[currentId].url}
-              alt={data[currentId].name}
-              width={1000}
-              height={600}
-            />
+            <div className={fadeClass}>
+              <Image
+                src={data[params.id].url}
+                alt={data[params.id].name}
+                width={1000}
+                height={600}
+              />
+            </div>
           </div>
         </div>
       )}
