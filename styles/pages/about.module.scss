@@ -5,10 +5,20 @@
   .hero {
     padding: 17rem 7% 10rem;
     @include flex;
+    h1 {
+      font-size: 6rem;
+    }
+    span {
+      color: $accent;
+    }
+  }
+
+  .images-three {
+    @include grid(3, center);
   }
   .images {
     border-top: 1px solid $additional-border;
-    @include grid(3, center);
+
     padding: 4vmin;
     gap: 4vmin;
 
@@ -33,6 +43,28 @@
       .text {
         max-width: 84rem;
         text-align: center;
+      }
+    }
+  }
+
+  .images-two {
+    @include grid(2, center);
+  }
+
+  .session {
+    padding: 10rem 2rem;
+    border-top: 1px solid $additional-border;
+    @include flex;
+    .content {
+      @include flex(center, center, row);
+      justify-content: space-between;
+      width: 100%;
+      max-width: 120rem;
+      h2 {
+        font-size: 5rem;
+      }
+      span {
+        color: $accent;
       }
     }
   }
