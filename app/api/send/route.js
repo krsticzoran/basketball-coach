@@ -6,7 +6,8 @@ export async function GET() {
   try {
     console.log('Attempting to send email...')
     const { data } = await resend.emails.send({
-      from: 'onboarding@resend.dev',
+      /*put a website address instead of a generic one*!!!*/
+      from: 'PRO BASKETBALL COACH <onboarding@resend.dev>',
       to: 'zorankrstic81@gmail.com',
       subject: 'Hello',
       html: '<h1>It will work</h1>',
