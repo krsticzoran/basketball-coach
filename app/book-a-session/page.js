@@ -2,6 +2,7 @@ import classes from '@/styles/pages/book-a-session.module.scss'
 import style from '@/styles/components/ui/button.module.scss'
 import Image from 'next/image'
 import trainingSession from '../../public/session.jpeg'
+import { sendingEmail } from '@/lib/action'
 
 export default function Contact() {
   return (
@@ -17,7 +18,7 @@ export default function Contact() {
             Submit your details below, and Coach Siniša Savović will contact you
             shortly to create a personalized plan for your success.
           </p>
-          <form>
+          <form action={sendingEmail}>
             <input type='text' name='name' placeholder='First Name' required />
             <input
               type='text'
