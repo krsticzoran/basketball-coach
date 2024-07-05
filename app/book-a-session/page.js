@@ -1,6 +1,7 @@
 import classes from '@/styles/pages/book-a-session.module.scss'
-import style from '@/styles/components/ui/button.module.scss'
+
 import Image from 'next/image'
+import FormSubmitButton from '@/components/ui/form-submit'
 import trainingSession from '../../public/session.jpeg'
 import { sendingEmail } from '@/lib/action'
 
@@ -46,12 +47,7 @@ export default function Contact() {
               className={classes[`full-width`]}
               required
             ></textarea>
-            <button
-              type='submit'
-              className={`${classes[`full-width`]} ${style.button}`}
-            >
-              Submit
-            </button>
+            <FormSubmitButton />
           </form>
         </div>
         <div className={classes['image-container']}>
