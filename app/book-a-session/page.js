@@ -1,11 +1,21 @@
+'use client'
+
+import { useFormState } from 'react-dom'
+
 import classes from '@/styles/pages/book-a-session.module.scss'
+import style from '@/styles/components/ui/button.module.scss'
 
 import Image from 'next/image'
 import FormSubmitButton from '@/components/ui/form-submit'
 import trainingSession from '../../public/session.jpeg'
 import { sendingEmail } from '@/lib/action'
 
+const initialState = {
+  message: '',
+}
+
 export default function Contact() {
+  const [state, formAction] = useFormState(sendingEmail, initialState)
   return (
     <>
       <div className={classes.contact}>
@@ -19,8 +29,9 @@ export default function Contact() {
             Submit your details below, and Coach Siniša Savović will contact you
             shortly to create a personalized plan for your success.
           </p>
-          <form action={sendingEmail}>
-            <input type='text' name='name' placeholder='First Name' required />
+
+          <form action={formAction}>
+            <input type='text' name='name' placeholder='First Name' />
             <input
               type='text'
               name='surname'
@@ -49,6 +60,7 @@ export default function Contact() {
             ></textarea>
             <FormSubmitButton />
           </form>
+          <p>{state?.message}</p>
         </div>
         <div className={classes['image-container']}>
           <Image src={trainingSession} alt='training session' />
