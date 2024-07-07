@@ -31,7 +31,7 @@ export default function Contact() {
           </p>
 
           <form action={formAction}>
-            <input type='text' name='name' placeholder='First Name' />
+            <input type='text' name='name' placeholder='First Name' required />
             <input
               type='text'
               name='surname'
