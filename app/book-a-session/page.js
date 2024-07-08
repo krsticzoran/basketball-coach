@@ -85,7 +85,15 @@ export default function Contact() {
             ></textarea>
             <FormSubmitButton />
           </form>
-          <p>{message}</p>
+          <p
+            style={{
+              color: message?.includes('sent successfully') ? 'green' : 'red',
+              paddingTop: '2rem',
+              fontWeight: 'bold',
+            }}
+          >
+            {message}
+          </p>
         </div>
         <div className={classes['image-container']}>
           <Image src={trainingSession} alt='training session' />
