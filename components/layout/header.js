@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import classes from '@/styles/components/layout/header.module.scss'
 import instagram from '../../public/instagram.png'
+import menu from '@/public/menu.svg'
 import Image from 'next/image'
 import NavLink from './nav-link'
 import { useState, useEffect } from 'react'
@@ -58,9 +59,25 @@ export default function Header() {
           </nav>
         </header>
       ) : (
-        <>
-          <p>header for mobile</p>
-        </>
+        <header className={classes['header-mobile']}>
+          <ul>
+            <li className={classes.logo}>
+              <Link href='/'>some logo</Link>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <button>
+                <Image src={menu} priority alt='menu icon' />
+              </button>
+            </li>
+            <li>
+              <Link href='https://www.instagram.com/sawa_ska/'>
+                <Image src={instagram} priority alt='Instagram' />
+              </Link>
+            </li>
+          </ul>
+        </header>
       )}
     </>
   )

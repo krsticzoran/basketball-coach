@@ -1,7 +1,8 @@
 @use '../../utilities/variables' as *;
 @use '../../utilities/mixins' as *;
 
-.header {
+.header,
+.header-mobile {
   position: fixed;
   width: 100%;
   top: 0;
@@ -12,10 +13,6 @@
   text-transform: uppercase;
   @include font-size(s);
   border-bottom: 1px solid $border;
-
-  .active {
-    color: $accent;
-  }
 
   ul {
     @include flex(center, center, row);
@@ -74,5 +71,19 @@
         background-color: $white;
       }
     }
+  }
+}
+
+.header {
+  .active {
+    color: $accent;
+  }
+}
+
+.header-mobile {
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
   }
 }
