@@ -10,6 +10,7 @@ import { useState, useEffect } from 'react'
 
 export default function Header() {
   const [isDesktop, setIsDesktop] = useState(null)
+  const [isOpen, setIsOpen] = useState(false)
 
   const checkWindowWidth = () => {
     if (typeof window !== 'undefined') {
@@ -67,7 +68,7 @@ export default function Header() {
           </ul>
           <ul>
             <li>
-              <button>
+              <button onClick={() => setIsOpen((prevState) => !prevState)}>
                 <Image src={menu} priority alt='menu icon' />
               </button>
             </li>
@@ -77,6 +78,28 @@ export default function Header() {
               </Link>
             </li>
           </ul>
+          {isOpen && (
+            <div className={classes['menu-modal']}>
+              <nav>
+                <ul>
+                  <li>
+                    <NavLink href='/'>Home</NavLink>
+                  </li>
+                  <li>
+                    <NavLink href='/about'>About</NavLink>
+                  </li>
+                  <li>
+                    <NavLink href='/gallery'>Gallery</NavLink>
+                  </li>
+                  <li>
+                    <Link href='/book-a-session' className={classes.session}>
+                      book a session
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          )}
         </header>
       )}
     </>

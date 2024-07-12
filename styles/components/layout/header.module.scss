@@ -87,3 +87,17 @@
     cursor: pointer;
   }
 }
+.menu-modal {
+  position: fixed;
+  top: 6.9rem;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: $background;
+  z-index: 99999;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
