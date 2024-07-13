@@ -60,27 +60,29 @@ export default function Header() {
           </nav>
         </header>
       ) : (
-        <header className={classes['header-mobile']}>
-          <ul>
-            <li className={classes.logo}>
-              <Link href='/'>some logo</Link>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <button onClick={() => setIsOpen((prevState) => !prevState)}>
-                <Image src={menu} priority alt='menu icon' />
-              </button>
-            </li>
-            <li>
-              <Link href='https://www.instagram.com/sawa_ska/'>
-                <Image src={instagram} priority alt='Instagram' />
-              </Link>
-            </li>
-          </ul>
+        <>
+          <header className={classes['header-mobile']}>
+            <ul>
+              <li className={classes.logo}>
+                <Link href='/'>some logo</Link>
+              </li>
+            </ul>
+            <ul>
+              <li className={isOpen ? classes['menu-button'] : ''}>
+                <button onClick={() => setIsOpen((prevState) => !prevState)}>
+                  <Image src={menu} priority alt='menu icon' />
+                </button>
+              </li>
+              <li>
+                <Link href='https://www.instagram.com/sawa_ska/'>
+                  <Image src={instagram} priority alt='Instagram' />
+                </Link>
+              </li>
+            </ul>
+          </header>
           {isOpen && (
             <div className={classes['menu-modal']}>
-              <nav>
+              <nav onClick={() => setIsOpen(false)}>
                 <ul>
                   <li>
                     <NavLink href='/'>Home</NavLink>
@@ -100,7 +102,7 @@ export default function Header() {
               </nav>
             </div>
           )}
-        </header>
+        </>
       )}
     </>
   )
