@@ -7,6 +7,7 @@ import menu from '@/public/menu.svg'
 import Image from 'next/image'
 import NavLink from './nav-link'
 import { useState, useEffect } from 'react'
+import logo from '@/public/logo.png'
 
 export default function Header() {
   const [isDesktop, setIsDesktop] = useState(null)
@@ -33,7 +34,9 @@ export default function Header() {
         <header className={classes.header}>
           <ul>
             <li className={classes.logo}>
-              <Link href='/'>some logo</Link>
+              <Link href='/'>
+                <Image src={logo} priority alt='logo' />
+              </Link>
             </li>
           </ul>
 
@@ -64,11 +67,19 @@ export default function Header() {
           <header className={classes['header-mobile']}>
             <ul>
               <li className={classes.logo}>
-                <Link href='/'>some logo</Link>
+                <Link href='/'>
+                  <Image src={logo} priority alt='logo' />
+                </Link>
               </li>
             </ul>
             <ul>
-              <li className={isOpen ? classes['menu-button'] : ''}>
+              <li
+                className={
+                  isOpen
+                    ? classes['menu-button-open']
+                    : classes['menu-button-close']
+                }
+              >
                 <button onClick={() => setIsOpen((prevState) => !prevState)}>
                   <Image src={menu} priority alt='menu icon' />
                 </button>
