@@ -91,28 +91,28 @@ export default function Header() {
               </li>
             </ul>
           </header>
-          {isOpen && (
-            <div className={classes['menu-modal']}>
-              <nav onClick={() => setIsOpen(false)}>
-                <ul>
-                  <li>
-                    <NavLink href='/'>Home</NavLink>
-                  </li>
-                  <li>
-                    <NavLink href='/about'>About</NavLink>
-                  </li>
-                  <li>
-                    <NavLink href='/gallery'>Gallery</NavLink>
-                  </li>
-                  <li>
-                    <Link href='/book-a-session' className={classes.session}>
-                      book a session
-                    </Link>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          )}
+          <div
+            className={`${classes['menu-modal']} ${isOpen ? classes.open : classes.hidden}`}
+          >
+            <nav onClick={() => setIsOpen(false)}>
+              <ul>
+                <li>
+                  <NavLink href='/'>Home</NavLink>
+                </li>
+                <li>
+                  <NavLink href='/about'>About</NavLink>
+                </li>
+                <li>
+                  <NavLink href='/gallery'>Gallery</NavLink>
+                </li>
+                <li>
+                  <Link href='/book-a-session' className={classes.session}>
+                    book a session
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </>
       )}
     </>
