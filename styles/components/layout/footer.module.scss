@@ -4,6 +4,10 @@
 .footer {
   border-top: 1px solid $additional-border;
 
+  @include sm {
+    border-top: none;
+  }
+
   .top {
     @include grid(4, center);
     border-bottom: 1px solid $border;
@@ -39,6 +43,16 @@
         }
       }
     }
+
+    @include sm {
+      @include grid(2, center);
+
+      div {
+        border-top: 1px solid $border;
+        height: 100%;
+        border-left: 1px solid $border;
+      }
+    }
   }
 
   .bottom {
@@ -61,6 +75,14 @@
     }
     div:not(:first-of-type) {
       border-left: 1px solid $border;
+    }
+    @include sm {
+      @include grid(1, center);
+
+      div:not(:first-of-type) {
+        border-left: none;
+        border-top: 1px solid $border;
+      }
     }
   }
 }
