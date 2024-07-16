@@ -26,7 +26,7 @@ export default function Home() {
           </p>
           <Button href='/contact/'>get started</Button>
         </div>
-        <div>
+        <div className={classes.image}>
           <Image src={bgImage} priority alt='Nikola Jokic' />
         </div>
       </section>
