@@ -6,8 +6,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "build": "next build",
-    "start": "next start",
-    "dev": "next dev"
+    "start": "NODE_ENV=production node server.js",
+    "dev": "node server.js"
   },
   "dependencies": {
     "next": "14.2.3",
