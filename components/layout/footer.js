@@ -9,13 +9,13 @@ export default function Footer() {
           <h5>Quick Links</h5>
           <ul>
             <li>
-              <Link href='/'>About</Link>
+              <Link href='/about'>About</Link>
             </li>
             <li>
-              <Link href='/'>Book a session</Link>
+              <Link href='/book-a-session'>Book a session</Link>
             </li>
             <li>
-              <Link href='/'>Gallery</Link>
+              <Link href='/gallery'>Gallery</Link>
             </li>
           </ul>
         </div>
