@@ -84,7 +84,7 @@ export default function About() {
             and start your <br /> journey today!
           </h2>
 
-          <Button href='/contact/'>get started</Button>
+          <Button href='/book-a-session/'>get started</Button>
         </div>
       </div>
     </div>
