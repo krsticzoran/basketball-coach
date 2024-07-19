@@ -73,6 +73,11 @@
   align-items: center;
   z-index: 1000;
 
+  img {
+    object-fit: cover;
+    object-position: center;
+  }
+
   .container {
     position: relative;
     overflow: hidden;

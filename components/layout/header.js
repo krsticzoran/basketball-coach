@@ -55,7 +55,10 @@ export default function Header() {
                 <Link href='/book-a-session'>book a session</Link>
               </li>
               <li>
-                <Link href='https://www.instagram.com/sawa_ska/'>
+                <Link
+                  href='https://www.instagram.com/sawa_ska/'
+                  className={classes.instangram}
+                >
                   <Image src={instagram} priority alt='Instagram' />
                 </Link>
               </li>
@@ -85,7 +88,10 @@ export default function Header() {
                 </button>
               </li>
               <li>
-                <Link href='https://www.instagram.com/sawa_ska/'>
+                <Link
+                  href='https://www.instagram.com/sawa_ska/'
+                  className={classes.instangram}
+                >
                   <Image src={instagram} priority alt='Instagram' />
                 </Link>
               </li>

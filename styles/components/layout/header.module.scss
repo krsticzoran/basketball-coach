@@ -20,11 +20,25 @@
 
     li {
       color: $white;
-      @include spacing(padding, 3, 4);
 
       background-color: $transparent;
       transition: 0.2;
-      min-height: 100%;
+
+      button {
+        padding: 1.95rem 3rem;
+      }
+
+      a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        @include spacing(padding, 3, 4);
+      }
+
+      .instangram {
+        padding: 1.9rem 3rem;
+      }
 
       &:not(:last-child) {
         border-right: 1px solid $border;
@@ -58,12 +72,16 @@
       border-left: none !important;
       border-right: 1px solid $border;
       background-color: $transparent !important;
-      padding: 1.3rem 3rem;
 
       a {
         display: block;
         height: 100%;
         width: 100%;
+        padding: 1.2rem 3rem;
+
+        &:last-child {
+          padding: 1.2rem 3rem;
+        }
       }
 
       img {
@@ -79,7 +97,7 @@
     .session {
       background-color: $accent;
       color: $background;
-      border-bottom: 1px solid $accent;
+
       &:hover {
         background-color: $white;
       }
@@ -116,7 +134,7 @@
 }
 .menu-modal {
   position: fixed;
-  top: 6.3rem;
+  top: 6.1rem;
   left: 0;
   width: 100%;
   background-color: $background;
