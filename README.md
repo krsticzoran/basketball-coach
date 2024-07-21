@@ -1,8 +1,10 @@
 # Basketball Coach Website
 
+[DEMO](https://basketball.coach.zkrstic.com/)<br /><br />
+
 ## Project Status
 
-This project is currently in the starting phase.
+This project is in the middle stage of development.
 
 ## About the Coach
 
@@ -14,7 +16,7 @@ This project is currently in the starting phase.
 - **Home Page:** Introduce Siniša Savović and highlight the benefits of individual training sessions.
 - **About Page:** Provide background information about Siniša Savović, including his experience, qualifications, and coaching philosophy.
 - **Gallery Page:** Showcase photos and videos of previous training sessions, testimonials from satisfied customers, and success stories.
-- **Video Page:** Share instructional videos, drills, and tips to help potential customers understand Siniša Savović's teaching style and expertise.
+
 - **Contact Page:** Allow visitors to reach out to Siniša Savović for inquiries, bookings, and scheduling individual training sessions.
 
 ## Technologies Used
@@ -32,10 +34,6 @@ This project is built using Next.js for server-rendered React applications. It o
 ## Usage
 
 Feel free to explore the website and navigate through its pages to learn more about Siniša Savović and the individual training services offered. If you're interested in booking a session or have any questions, visit the Contact page to get in touch.
-
-## Contributing
-
-Contributions to this project are welcome! If you have ideas for new features, improvements, or bug fixes, please submit a pull request or open an issue on GitHub.
 
 ## License
 
