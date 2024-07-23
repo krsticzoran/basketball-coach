@@ -3,31 +3,31 @@
 /* ----- Media Query -----*/
 
 @mixin xs {
-  @media (max-width: 57.6rem) {
+  @media (max-width: 576px) {
     @content;
   }
 }
 
 @mixin sm {
-  @media (max-width: 76.7rem) {
+  @media (max-width: 767px) {
     @content;
   }
 }
 
 @mixin md {
-  @media (max-width: 99.1rem) {
+  @media (max-width: 9991px) {
     @content;
   }
 }
 
 @mixin lg {
-  @media (max-width: 120rem) {
+  @media (max-width: 1200px) {
     @content;
   }
 }
 
 @mixin xl {
-  @media (max-width: 140rem) {
+  @media (max-width: 1400px) {
     @content;
   }
 }

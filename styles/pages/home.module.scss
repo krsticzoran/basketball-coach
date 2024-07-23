@@ -39,22 +39,22 @@
     object-position: top;
   }
 
-  @include xs {
+  @include sm {
     grid: none;
     @include flex(start, center, column-reverse);
     padding: 0;
     padding-top: 6.1rem;
-    height: 100dvh;
+    min-height: 200vh;
 
     .text {
       padding: 13% 10%;
+      max-width: 70rem;
 
-      max-width: 50rem;
       h1 {
         font-size: 4.6rem;
       }
       p {
-        @include font-size(xs);
+        @include font-size(s);
       }
     }
     .image {
@@ -62,6 +62,19 @@
       img {
         position: relative;
         border-bottom: 1px solid $border;
+      }
+    }
+  }
+  @include xs {
+    height: 100dvh;
+    .text {
+      max-width: 50rem;
+
+      h1 {
+        font-size: 5.4rem;
+      }
+      p {
+        @include font-size(xs);
       }
     }
   }

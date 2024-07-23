@@ -16,7 +16,7 @@ export default function Header() {
   const checkWindowWidth = () => {
     if (typeof window !== 'undefined') {
       const windowWidth = window.innerWidth
-      setIsDesktop(windowWidth >= 1024)
+      setIsDesktop(windowWidth >= 991)
     }
   }
 
