@@ -39,7 +39,7 @@
     object-position: top;
   }
 
-  @include sm {
+  @include md {
     grid: none;
     @include flex(start, center, column-reverse);
     padding: 0;

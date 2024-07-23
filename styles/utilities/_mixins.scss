@@ -15,7 +15,7 @@
 }
 
 @mixin md {
-  @media (max-width: 9991px) {
+  @media (max-width: 991px) {
     @content;
   }
 }
