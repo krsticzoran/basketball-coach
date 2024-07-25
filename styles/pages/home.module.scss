@@ -41,7 +41,7 @@
 
   @include md {
     grid: none;
-    @include flex(start, center, column-reverse);
+    @include flex(start, start, column-reverse);
     padding: 0;
     padding-top: 6.1rem;
     height: auto;
@@ -78,7 +78,9 @@
 
 .about {
   @include section($additional-background);
-
+  @include md {
+    padding: 13% 2rem;
+  }
   .container {
     @include container;
     @include grid(2, center);
@@ -101,9 +103,8 @@
     .block-right {
       padding-left: 10%;
       @include md {
-        @include spacing(padding-top, 5);
-        padding-left: 0;
-        max-width: 47rem;
+        padding: 13% 10% 0 10%;
+        max-width: 70rem;
       }
     }
 
