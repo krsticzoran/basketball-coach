@@ -120,7 +120,9 @@
 
 .services {
   @include section($background);
-
+  @include md {
+    padding: 13% 2rem;
+  }
   .container {
     @include container;
     .heading {
@@ -130,12 +132,24 @@
       @include grid(3, start);
       grid-column-gap: 4vmin;
       margin-top: 0;
+      @include md {
+        grid: none;
+      }
 
       .service-one {
         padding-top: 100px;
+        @include md {
+          padding: 0;
+          @include spacing(margin-top, 3);
+          @include spacing(margin-bottom, 5);
+        }
       }
       .service-two {
         padding-top: 50px;
+        @include md {
+          padding: 0;
+          @include spacing(margin-bottom, 5);
+        }
       }
 
       .service-img {
