@@ -122,7 +122,7 @@ export default function Home() {
             and unparalleled impact in the world of basketball.
           </p>
         </div>
-        <div>
+        <div className={classes[`img-block`]}>
           <Image src={services3} alt='services' />
         </div>
       </section>

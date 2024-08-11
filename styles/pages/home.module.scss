@@ -189,12 +189,27 @@
   @include grid(2, center);
   grid-column-gap: 4vmin;
 
+  @include md {
+    grid: none;
+    @include flex(start, start, column);
+    padding: 0;
+
+    height: auto;
+  }
+
   .left-block {
     @include spacing(padding, 13, 3);
 
     h2 {
       @include spacing(margin-bottom, 3);
     }
+    @include md {
+      padding: 13% 10% 13% 10%;
+      max-width: 70rem;
+    }
+  }
+  .img-block {
+    width: 100%;
   }
 
   img {
