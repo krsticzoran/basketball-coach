@@ -23,7 +23,6 @@
 
     p {
       @include spacing(margin-bottom, 3);
-      line-height: 175%;
       color: $paragraphs;
       @include flex(flex-start, flex-start);
     }
@@ -53,9 +52,6 @@
       h1 {
         font-size: 5.4rem;
       }
-      p {
-        @include font-size(s);
-      }
     }
     .image {
       img {
@@ -68,9 +64,6 @@
     .text {
       h1 {
         font-size: 4.6rem;
-      }
-      p {
-        @include font-size(xs);
       }
     }
   }
@@ -114,6 +107,7 @@
     p {
       @include spacing(margin-bottom, 4);
       max-width: 47rem;
+      line-height: 175%;
     }
   }
 }

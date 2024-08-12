@@ -22,6 +22,10 @@ body {
 
 p {
   @include font-size(s);
+  line-height: 170%;
+  @include xs {
+    @include font-size(xs);
+  }
 }
 
 h1,
