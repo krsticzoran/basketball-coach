@@ -5,8 +5,14 @@
   .hero {
     padding: 17rem 7% 10rem;
     @include flex;
+    @include md {
+      padding: 14rem 7% 7rem;
+    }
     h1 {
       font-size: 6rem;
+      @include md {
+        @include font-size(xxl);
+      }
     }
     span {
       color: $accent;
@@ -15,6 +21,9 @@
 
   .images-three {
     @include grid(3, center);
+    @include md {
+      @include grid(1, center);
+    }
   }
   .images {
     border-top: 1px solid $additional-border;
@@ -49,19 +58,35 @@
 
   .images-two {
     @include grid(2, center);
+    @include md {
+      @include grid(1, center);
+    }
   }
 
   .session {
     padding: 10rem 2rem;
     border-top: 1px solid $additional-border;
     @include flex;
+    @include md {
+      padding: 7rem 2rem;
+    }
     .content {
       @include flex(center, center, row);
       justify-content: space-between;
       width: 100%;
       max-width: 120rem;
+      @include sm {
+        @include flex(center, center, column);
+      }
       h2 {
         font-size: 5rem;
+        @include md {
+          font-size: 4.2rem;
+        }
+        @include sm {
+          @include spacing(padding-bottom, 3);
+          text-align: center;
+        }
       }
       span {
         color: $accent;
