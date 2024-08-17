@@ -3,11 +3,22 @@
 
 .contact {
   @include grid(2, start);
-  padding-top: 6.3rem;
+  padding-top: 6.1rem;
   align-items: stretch;
+  @include lg {
+    grid: none;
+    @include flex(start, center, column-reverse);
+  }
 
   .data {
     padding: 13rem 16%;
+    @include lg {
+      padding: 8rem 11% 3rem;
+    }
+    @include xs {
+      max-width: 100%;
+      padding: 8rem 5% 3rem;
+    }
     p {
       @include spacing(margin-bottom, 4);
     }
@@ -24,6 +35,9 @@
         background-color: $transparent;
         @include spacing(padding, 0, 3);
         @include font-size(s);
+        @include xs {
+          width: 100%;
+        }
         &:focus {
           outline: none;
           border: 2px solid $white;
