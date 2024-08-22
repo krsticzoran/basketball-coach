@@ -6,7 +6,9 @@
   padding-top: 7.3rem;
   @include grid(3, start);
   gap: 1rem;
-
+  @include sm {
+    @include grid(1, start);
+  }
   img {
     max-height: auto;
     width: 100%;
