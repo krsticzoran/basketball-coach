@@ -19,50 +19,6 @@
   }
 }
 
-@keyframes fadeInPrev {
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeOutPrev {
-  from {
-    opacity: 0;
-    transform: translateX(0);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(100%);
-  }
-}
-
-@keyframes fadeInNext {
-  from {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeOutNext {
-  from {
-    opacity: 0;
-    transform: translateX(0);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(-100%);
-  }
-}
-
 .modal {
   position: fixed;
   top: 0;
@@ -121,20 +77,4 @@
       right: 0;
     }
   }
-}
-
-.fade-in-prev {
-  animation: fadeInPrev 0.3s forwards;
-}
-
-.fade-out-prev {
-  animation: fadeOutPrev 0.3s forwards;
-}
-
-.fade-in-next {
-  animation: fadeInNext 0.3s forwards;
-}
-
-.fade-out-next {
-  animation: fadeOutNext 0.3s forwards;
 }
