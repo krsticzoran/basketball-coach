@@ -7,7 +7,6 @@ import Modal from '@/components/layout/modal'
 
 export default async function Gallery({ params }) {
   const data = await getImage()
-
   if (data.length === 0) {
     notFound()
   }
@@ -28,6 +27,7 @@ export default async function Gallery({ params }) {
                 alt={image.name}
                 width={500}
                 height={300}
+                priority
               />
             </Link>
           </div>
