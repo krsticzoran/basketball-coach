@@ -14,7 +14,7 @@ export default function Modal({ params, data }) {
       router.push(
         `/gallery/${params.id == 0 ? data.length - 1 : params.id - 1}`,
       )
-    }, '500')
+    }, '300')
   }
 
   const handleNextClick = () => {
@@ -22,7 +22,7 @@ export default function Modal({ params, data }) {
       router.push(
         `/gallery/${params.id == data.length - 1 ? 0 : +params.id + 1}`,
       )
-    }, '500')
+    }, '300')
   }
 
   return (

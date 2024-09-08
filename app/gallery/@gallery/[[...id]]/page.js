@@ -27,7 +27,6 @@ export default async function Gallery({ params }) {
                 alt={image.name}
                 width={500}
                 height={300}
-                priority
               />
             </Link>
           </div>
