@@ -45,8 +45,8 @@
   z-index: 1000;
 
   img {
-    object-fit: cover;
-    object-position: center;
+    min-height: 100%;
+    width: auto;
   }
 
   .container {
