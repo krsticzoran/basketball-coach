@@ -44,6 +44,10 @@
   align-items: center;
   z-index: 1000;
 
+  @include md {
+    display: none;
+  }
+
   img {
     min-height: 100%;
     width: auto;
