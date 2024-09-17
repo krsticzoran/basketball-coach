@@ -29,6 +29,10 @@
     object-fit: cover;
     object-position: top;
     margin-bottom: 1rem;
+    @include md {
+      cursor: auto;
+      pointer-events: none;
+    }
   }
 }
 
