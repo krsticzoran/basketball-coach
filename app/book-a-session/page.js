@@ -10,6 +10,7 @@ import Image from 'next/image'
 import FormSubmitButton from '@/components/ui/form-submit'
 import trainingSession from '../../public/session.jpeg'
 import { sendingEmail } from '@/lib/action'
+import Transition from '@/components/ui/transition'
 
 const initialState = {
   message: '',
@@ -32,7 +33,7 @@ export default function Contact() {
   }, [state])
 
   return (
-    <>
+    <Transition>
       <div className={classes.contact}>
         <div className={classes.data}>
           <div className='subtitle'>
@@ -99,6 +100,6 @@ export default function Contact() {
           <Image src={trainingSession} alt='training session' />
         </div>
       </div>
-    </>
+    </Transition>
   )
 }
