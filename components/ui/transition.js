@@ -1,15 +1,21 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import React from 'react'
 
 export default function Transition({ children }) {
   return (
-    <motion.div
-      initial={{ y: 50, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ ease: 'easeInOut', duration: 0.75 }}
-    >
-      {children}
-    </motion.div>
+    <div style={{ minHeight: '100vh' }}>
+      <motion.div
+        initial={{ opacity: 0, height: '0px' }}
+        animate={{ opacity: 1, height: '100%' }}
+        transition={{
+          duration: 1,
+        }}
+        style={{ overflow: 'hidden' }}
+      >
+        {children}
+      </motion.div>
+    </div>
   )
 }
