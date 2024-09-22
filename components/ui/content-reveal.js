@@ -8,12 +8,14 @@ export default function ContentReveal({
   duration = 1,
   delay = 0,
   minHeight = 0,
+  height = '100%',
+  scale = 1,
 }) {
   return (
     <div style={{ minHeight }}>
       <motion.div
-        initial={{ opacity: 0, height: '0px' }}
-        animate={{ opacity: 1, height: '100%' }}
+        initial={{ opacity: 0, height, scale }}
+        animate={{ opacity: 1, height: '100%', scale: 1 }}
         transition={{
           duration,
           delay,

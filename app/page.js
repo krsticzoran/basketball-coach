@@ -15,21 +15,24 @@ export default function Home() {
     <main>
       <section className={classes.hero}>
         <div className={classes.text}>
-          <h1>
-            Unlock Your
-            <span> MVP Potential</span>
-          </h1>
-          <p>
-            <span> Train with Siniša Savović, Jokić's First Coach.</span>
-            <span>
-              Join our sessions and let's make your basketball dreams a reality.
-            </span>
-          </p>
-          <Button href='/book-a-session/'>get started</Button>
+          <ContentReveal delay={0.5} scale={1.15}>
+            <h1>
+              Unlock Your
+              <span> MVP Potential</span>
+            </h1>
+            <p>
+              <span> Train with Siniša Savović, Jokić's First Coach.</span>
+              <span>
+                Join our sessions and let's make your basketball dreams a
+                reality.
+              </span>
+            </p>
+            <Button href='/book-a-session/'>get started</Button>
+          </ContentReveal>
         </div>
 
         <div className={classes.image}>
-          <ContentReveal delay={1}>
+          <ContentReveal delay={1.5}>
             <Image src={bgImage} priority alt='Nikola Jokic' />
           </ContentReveal>
         </div>

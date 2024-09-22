@@ -32,7 +32,7 @@ export default function Contact() {
   }, [state])
 
   return (
-    <ContentReveal minHeight={'100vh'}>
+    <ContentReveal minHeight={'100vh'} height={'0px'}>
       <div className={classes.contact}>
         <div className={classes.data}>
           <div className='subtitle'>
