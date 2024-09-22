@@ -4,7 +4,6 @@ import { useState, useEffect, useRef } from 'react'
 import { useFormState } from 'react-dom'
 
 import classes from '@/styles/pages/book-a-session.module.scss'
-import style from '@/styles/components/ui/button.module.scss'
 
 import Image from 'next/image'
 import FormSubmitButton from '@/components/ui/form-submit'
@@ -33,7 +32,7 @@ export default function Contact() {
   }, [state])
 
   return (
-    <ContentReveal>
+    <ContentReveal minHeight={'100vh'}>
       <div className={classes.contact}>
         <div className={classes.data}>
           <div className='subtitle'>

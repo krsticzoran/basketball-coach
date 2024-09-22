@@ -8,6 +8,7 @@ import services2 from '../public/services2.jpeg'
 import services3 from '../public/services3.jpeg'
 import personal from '../public/personal.svg'
 import Accordion from '@/components/ui/accordion'
+import ContentReveal from '@/components/ui/content-reveal'
 
 export default function Home() {
   return (
@@ -26,8 +27,11 @@ export default function Home() {
           </p>
           <Button href='/book-a-session/'>get started</Button>
         </div>
+
         <div className={classes.image}>
-          <Image src={bgImage} priority alt='Nikola Jokic' />
+          <ContentReveal delay={1}>
+            <Image src={bgImage} priority alt='Nikola Jokic' />
+          </ContentReveal>
         </div>
       </section>
       <section className={classes.about}>
