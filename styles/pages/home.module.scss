@@ -83,14 +83,18 @@
       grid: none;
       @include flex(flex-start, flex-start, column);
       padding: 0;
-
+      width: 100%;
       height: auto;
+    }
+    .img-container {
+      min-width: 100%;
     }
 
     img {
       width: 100%;
-      height: 100%;
+      height: auto;
       border: 1px solid $border;
+      object-fit: cover;
     }
 
     .block-right {

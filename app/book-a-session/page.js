@@ -7,7 +7,7 @@ import classes from '@/styles/pages/book-a-session.module.scss'
 
 import Image from 'next/image'
 import FormSubmitButton from '@/components/ui/form-submit'
-import trainingSession from '../../public/session.jpeg'
+import trainingSession from '../../public/book-a-session.jpg'
 import { sendingEmail } from '@/lib/action'
 import ContentReveal from '@/components/ui/content-reveal'
 
@@ -32,7 +32,7 @@ export default function Contact() {
   }, [state])
 
   return (
-    <ContentReveal minHeight={'100vh'} height={'0px'}>
+    <ContentReveal minHeight={'100vh'} height={'0px'} delay={1} duration={1.5}>
       <div className={classes.contact}>
         <div className={classes.data}>
           <div className='subtitle'>

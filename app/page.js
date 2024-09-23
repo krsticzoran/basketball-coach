@@ -38,28 +38,33 @@ export default function Home() {
         </div>
       </section>
       <section className={classes.about}>
-        <div className={classes.container}>
-          <div>
-            <Image src={welcomeImg} alt='Sinisa Savovic' />
-          </div>
-
-          <div className={classes['block-right']}>
-            <div className='subtitle'>
-              <div className='line'></div>
-              <div className='text'>about</div>
+        <ContentReveal height={'0px'} minHeight={'40vh'} delay={0.5}>
+          <div className={classes.container}>
+            <div className={classes['img-container']}>
+              <Image src={welcomeImg} alt='Sinisa Savovic' />
             </div>
-            <h2>Meet Siniša Savović: A Trailblazer in Basketball Excellence</h2>
-            <p>
-              Sinisa Savovic, a visionary leader in the realm of basketball
-              coaching, embodies a legacy of unparalleled expertise and
-              dedication. With a career spanning decades, his influence has
-              shaped the trajectories of countless athletes, including the likes
-              of NBA star Nikola Jokic. Dive deeper into Sinisa's journey,
-              philosophy, and unparalleled impact in the world of basketball.
-            </p>
-            <Button href='/about/'>Find Out More</Button>
+
+            <div className={classes['block-right']}>
+              <div className='subtitle'>
+                <div className='line'></div>
+                <div className='text'>about</div>
+              </div>
+              <h2>
+                Meet Siniša Savović: A Trailblazer in Basketball Excellence
+              </h2>
+              <p>
+                Sinisa Savovic, a visionary leader in the realm of basketball
+                coaching, embodies a legacy of unparalleled expertise and
+                dedication. With a career spanning decades, his influence has
+                shaped the trajectories of countless athletes, including the
+                likes of NBA star Nikola Jokic. Dive deeper into Sinisa's
+                journey, philosophy, and unparalleled impact in the world of
+                basketball.
+              </p>
+              <Button href='/about/'>Find Out More</Button>
+            </div>
           </div>
-        </div>
+        </ContentReveal>
       </section>
       <section className={classes.services}>
         <div className={classes.container}>

@@ -15,12 +15,15 @@ export default function ContentReveal({
     <div style={{ minHeight }}>
       <motion.div
         initial={{ opacity: 0, height, scale }}
-        animate={{ opacity: 1, height: '100%', scale: 1 }}
+        whileInView={{ opacity: 1, height: '100%', scale: 1 }}
         transition={{
           duration,
           delay,
         }}
         style={{ overflow: 'hidden' }}
+        viewport={{
+          once: true,
+        }}
       >
         {children}
       </motion.div>

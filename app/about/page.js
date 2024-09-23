@@ -1,6 +1,6 @@
 import classes from '@/styles/pages/about.module.scss'
 import Image from 'next/image'
-import trainingSession from '../../public/session.jpeg'
+import trainingSession from '../../public/book-a-session.jpg'
 import Button from '@/components/ui/button'
 
 export default function About() {
