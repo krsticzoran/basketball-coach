@@ -3,9 +3,9 @@ import bgImage from '../public/jokic.jpeg'
 import Button from '@/components/ui/button'
 import classes from '@/styles/pages/home.module.scss'
 import welcomeImg from '../public/Savovic.jpeg'
-import services1 from '../public/services1.jpeg'
-import services2 from '../public/services2.jpeg'
-import services3 from '../public/services3.jpeg'
+import services1 from '../public/services1.jpg'
+import services2 from '../public/services2.jpg'
+import services3 from '../public/services3.jpg'
 import personal from '../public/personal.svg'
 import Accordion from '@/components/ui/accordion'
 import ContentReveal from '@/components/ui/content-reveal'
@@ -68,53 +68,61 @@ export default function Home() {
       </section>
       <section className={classes.services}>
         <div className={classes.container}>
-          <div className='subtitle'>
-            <div className='line'></div>
-            <div className='text'>services</div>
-          </div>
-          <h2 className={classes.heading}>
-            HELPING YOU REACH HIGHER AND ACHIEVE MORE
-          </h2>
+          <ContentReveal delay={0.5}>
+            <div className='subtitle'>
+              <div className='line'></div>
+              <div className='text'>services</div>
+            </div>
+            <h2 className={classes.heading}>
+              HELPING YOU REACH HIGHER AND ACHIEVE MORE
+            </h2>
+          </ContentReveal>
           <div className={classes.grid}>
-            <div className={classes[`service-one`]}>
-              <div className={classes[`service-img`]}>
-                <Image src={services1} alt='services' />
+            <ContentReveal height={'0px'} minHeight={'40vh'} delay={0.5}>
+              <div className={classes[`service-one`]}>
+                <div className={classes[`service-img`]}>
+                  <Image src={services1} alt='services' />
+                </div>
+                <div className={classes[`services-text`]}>
+                  <Image src={personal} alt='services' />
+                  <h4>PERSONAL TRAINING</h4>
+                </div>
+                <p>
+                  Lacus duis consectetur elementum pharetra, dictumst dictum
+                  nulla adipiscing.
+                </p>
               </div>
-              <div className={classes[`services-text`]}>
-                <Image src={personal} alt='services' />
-                <h4>PERSONAL TRAINING</h4>
+            </ContentReveal>
+            <ContentReveal height={'0px'} minHeight={'40vh'} delay={0.5}>
+              <div className={classes[`service-two`]}>
+                <div className={classes[`service-img`]}>
+                  <Image src={services2} alt='services' />
+                </div>
+                <div className={classes[`services-text`]}>
+                  <Image src={personal} alt='services' />
+                  <h4>Basketball camp</h4>
+                </div>
+                <p>
+                  Lacus duis consectetur elementum pharetra, dictumst dictum
+                  nulla adipiscing.
+                </p>
               </div>
-              <p>
-                Lacus duis consectetur elementum pharetra, dictumst dictum nulla
-                adipiscing.
-              </p>
-            </div>
-            <div className={classes[`service-two`]}>
-              <div className={classes[`service-img`]}>
-                <Image src={services2} alt='services' />
+            </ContentReveal>
+            <ContentReveal height={'0px'} minHeight={'40vh'} delay={0.5}>
+              <div className={classes[`service-three`]}>
+                <div className={classes[`service-img`]}>
+                  <Image src={services3} alt='services' />
+                </div>
+                <div className={classes[`services-text`]}>
+                  <Image src={personal} alt='services' />
+                  <h4>Team</h4>
+                </div>
+                <p>
+                  Lacus duis consectetur elementum pharetra, dictumst dictum
+                  nulla adipiscing.
+                </p>
               </div>
-              <div className={classes[`services-text`]}>
-                <Image src={personal} alt='services' />
-                <h4>Basketball camp</h4>
-              </div>
-              <p>
-                Lacus duis consectetur elementum pharetra, dictumst dictum nulla
-                adipiscing.
-              </p>
-            </div>
-            <div className={classes[`service-three`]}>
-              <div className={classes[`service-img`]}>
-                <Image src={services3} alt='services' />
-              </div>
-              <div className={classes[`services-text`]}>
-                <Image src={personal} alt='services' />
-                <h4>Team</h4>
-              </div>
-              <p>
-                Lacus duis consectetur elementum pharetra, dictumst dictum nulla
-                adipiscing.
-              </p>
-            </div>
+            </ContentReveal>
           </div>
         </div>
       </section>
