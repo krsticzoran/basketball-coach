@@ -88,8 +88,10 @@ export default function Home() {
                   <h4>PERSONAL TRAINING</h4>
                 </div>
                 <p>
-                  Lacus duis consectetur elementum pharetra, dictumst dictum
-                  nulla adipiscing.
+                  Siniša’s individual coaching has been instrumental in
+                  developing elite players like Nikola Jokić, while guiding top
+                  basketball talents across Europe to achieve success at both
+                  national and international levels.
                 </p>
               </div>
             </ContentReveal>
@@ -103,8 +105,10 @@ export default function Home() {
                   <h4>Basketball camp</h4>
                 </div>
                 <p>
-                  Lacus duis consectetur elementum pharetra, dictumst dictum
-                  nulla adipiscing.
+                  In his accomplished career, Siniša has participated in over 15
+                  basketball camps across Europe, gaining valuable experience
+                  working alongside legendary coaches such as Željko Obradović
+                  and Ranko Žeravica.
                 </p>
               </div>
             </ContentReveal>
@@ -118,8 +122,10 @@ export default function Home() {
                   <h4>Team</h4>
                 </div>
                 <p>
-                  Lacus duis consectetur elementum pharetra, dictumst dictum
-                  nulla adipiscing.
+                  Siniša is a licensed FIBA coach who has led both senior and
+                  youth teams, achieving an impressive 80% win rate as a head
+                  coach throughout his career, including the national team of
+                  Vojvodina, KK Vrbas, and many others.
                 </p>
               </div>
             </ContentReveal>
@@ -127,56 +133,71 @@ export default function Home() {
         </div>
       </section>
       <section className={classes.full}>
-        <div className={classes[`left-block`]}>
-          <div className='subtitle'>
-            <div className='line'></div>
-            <div className='text'>services</div>
-          </div>
-          <h2>Meet Siniša Savović: A Trailblazer in Basketball Excellence</h2>
-          <p>
-            Sinisa Savovic, a visionary leader in the realm of basketball
-            coaching, embodies a legacy of unparalleled expertise and
-            dedication. With a career spanning decades, his influence has shaped
-            the trajectories of countless athletes, including the likes of NBA
-            star Nikola Jokic. Dive deeper into Sinisa's journey, philosophy,
-            and unparalleled impact in the world of basketball.
-          </p>
-        </div>
-        <div className={classes[`img-block`]}>
-          <Image src={services3} alt='services' />
-        </div>
-      </section>
-      <section className={classes.accordion}>
-        <div className={classes.container}>
-          <div className={classes[`accordion-header`]}>
+        <ContentReveal height={'0px'} minHeight={'40vh'} delay={0.5}>
+          <div className={classes[`left-block`]}>
             <div className='subtitle'>
               <div className='line'></div>
-              <div className='text'>Faq</div>
+              <div className='text'>services</div>
             </div>
-
-            <h2>
-              FREQUENTLY ASKED
-              <br />
-              QUESTIONS
-            </h2>
+            <h2>Meet Siniša Savović: A Trailblazer in Basketball Excellence</h2>
+            <p>
+              Sinisa Savovic, a visionary leader in the realm of basketball
+              coaching, embodies a legacy of unparalleled expertise and
+              dedication. With a career spanning decades, his influence has
+              shaped the trajectories of countless athletes, including the likes
+              of NBA star Nikola Jokic. Dive deeper into Sinisa's journey,
+              philosophy, and unparalleled impact in the world of basketball.
+            </p>
           </div>
+        </ContentReveal>
+        <ContentReveal height={'0px'} minHeight={'40vh'} delay={0.5}>
+          <div className={classes[`img-block`]}>
+            <Image src={services3} alt='services' />
+          </div>
+        </ContentReveal>
+      </section>
+
+      <section className={classes.accordion}>
+        <div className={classes.container}>
+          <ContentReveal delay={0.5}>
+            <div className={classes[`accordion-header`]}>
+              <div className='subtitle'>
+                <div className='line'></div>
+                <div className='text'>Faq</div>
+              </div>
+
+              <h2>
+                FREQUENTLY ASKED&nbsp;
+                <br />
+                QUESTIONS
+              </h2>
+            </div>
+          </ContentReveal>
           <div className={classes[`accordion-grid`]}>
-            <Accordion
-              header='Can I cancel my membership?'
-              content='Iaculis id magna arcu nibh magna orci nibh. Lorem donec arcu imperdiet sodales ut non praesent tristique est. Nunc vulputate morbi elit convallis. Consectetur etiam enim dignissim arcu elementum. Arcu orci, malesuada proin ac. Ornare odio morbi laoreet.'
-            />
-            <Accordion
-              header='Can I cancel my membership?'
-              content='Iaculis id magna arcu nibh magna orci nibh. Lorem donec arcu imperdiet sodales ut non praesent tristique est. Nunc vulputate morbi elit convallis. Consectetur etiam enim dignissim arcu elementum. Arcu orci, malesuada proin ac. Ornare odio morbi laoreet.'
-            />
-            <Accordion
-              header='Can I cancel my membership?'
-              content='Iaculis id magna arcu nibh magna orci nibh. Lorem donec arcu imperdiet sodales ut non praesent tristique est. Nunc vulputate morbi elit convallis. Consectetur etiam enim dignissim arcu elementum. Arcu orci, malesuada proin ac. Ornare odio morbi laoreet.'
-            />
-            <Accordion
-              header='Can I cancel my membership?'
-              content='Iaculis id magna arcu nibh magna orci nibh. Lorem donec arcu imperdiet sodales ut non praesent tristique est. Nunc vulputate morbi elit convallis. Consectetur etiam enim dignissim arcu elementum. Arcu orci, malesuada proin ac. Ornare odio morbi laoreet.'
-            />
+            <ContentReveal delay={0.5}>
+              <Accordion
+                header='Can I cancel my membership?'
+                content='Iaculis id magna arcu nibh magna orci nibh. Lorem donec arcu imperdiet sodales ut non praesent tristique est. Nunc vulputate morbi elit convallis. Consectetur etiam enim dignissim arcu elementum. Arcu orci, malesuada proin ac. Ornare odio morbi laoreet.'
+              />
+            </ContentReveal>
+            <ContentReveal delay={0.5}>
+              <Accordion
+                header='Can I cancel my membership?'
+                content='Iaculis id magna arcu nibh magna orci nibh. Lorem donec arcu imperdiet sodales ut non praesent tristique est. Nunc vulputate morbi elit convallis. Consectetur etiam enim dignissim arcu elementum. Arcu orci, malesuada proin ac. Ornare odio morbi laoreet.'
+              />
+            </ContentReveal>
+            <ContentReveal delay={0.5}>
+              <Accordion
+                header='Can I cancel my membership?'
+                content='Iaculis id magna arcu nibh magna orci nibh. Lorem donec arcu imperdiet sodales ut non praesent tristique est. Nunc vulputate morbi elit convallis. Consectetur etiam enim dignissim arcu elementum. Arcu orci, malesuada proin ac. Ornare odio morbi laoreet.'
+              />
+            </ContentReveal>
+            <ContentReveal delay={0.5}>
+              <Accordion
+                header='Can I cancel my membership?'
+                content='Iaculis id magna arcu nibh magna orci nibh. Lorem donec arcu imperdiet sodales ut non praesent tristique est. Nunc vulputate morbi elit convallis. Consectetur etiam enim dignissim arcu elementum. Arcu orci, malesuada proin ac. Ornare odio morbi laoreet.'
+              />
+            </ContentReveal>
           </div>
         </div>
       </section>
