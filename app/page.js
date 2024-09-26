@@ -7,6 +7,8 @@ import services1 from '../public/services1.jpg'
 import services2 from '../public/services2.jpg'
 import services3 from '../public/services3.jpg'
 import personal from '../public/personal.svg'
+import team from '../public/team.svg'
+import camp from '../public/camp.svg'
 import Accordion from '@/components/ui/accordion'
 import ContentReveal from '@/components/ui/content-reveal'
 
@@ -101,7 +103,7 @@ export default function Home() {
                   <Image src={services2} alt='services' />
                 </div>
                 <div className={classes[`services-text`]}>
-                  <Image src={personal} alt='services' />
+                  <Image src={camp} alt='services' />
                   <h4>Basketball camp</h4>
                 </div>
                 <p>
@@ -118,7 +120,7 @@ export default function Home() {
                   <Image src={services3} alt='services' />
                 </div>
                 <div className={classes[`services-text`]}>
-                  <Image src={personal} alt='services' />
+                  <Image src={team} alt='services' />
                   <h4>Team</h4>
                 </div>
                 <p>
