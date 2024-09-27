@@ -9,6 +9,7 @@ import services3 from '../public/services3.jpg'
 import personal from '../public/personal.svg'
 import team from '../public/team.svg'
 import camp from '../public/camp.svg'
+import gym from '../public/gym.jpg'
 import Accordion from '@/components/ui/accordion'
 import ContentReveal from '@/components/ui/content-reveal'
 
@@ -139,22 +140,23 @@ export default function Home() {
           <div className={classes[`left-block`]}>
             <div className='subtitle'>
               <div className='line'></div>
-              <div className='text'>services</div>
+              <div className='text'>location & facility</div>
             </div>
-            <h2>Meet Siniša Savović: A Trailblazer in Basketball Excellence</h2>
+            <h2>Comprehensive Basketball Training in Sombor</h2>
             <p>
-              Sinisa Savovic, a visionary leader in the realm of basketball
-              coaching, embodies a legacy of unparalleled expertise and
-              dedication. With a career spanning decades, his influence has
-              shaped the trajectories of countless athletes, including the likes
-              of NBA star Nikola Jokic. Dive deeper into Sinisa's journey,
-              philosophy, and unparalleled impact in the world of basketball.
+              Our training facility in Sombor is fully equipped to support the
+              holistic development of basketball players. With a dedicated gym
+              for strength and conditioning, a professional basketball court,
+              and access to experienced massage therapists, we provide all the
+              necessary resources to enhance your athletic performance. Whether
+              you're refining your skills on the court or focusing on recovery,
+              our environment ensures you have everything you need to succeed.
             </p>
           </div>
         </ContentReveal>
         <ContentReveal height={'0px'} minHeight={'40vh'} delay={0.5}>
           <div className={classes[`img-block`]}>
-            <Image src={services3} alt='services' />
+            <Image src={gym} alt='services' />
           </div>
         </ContentReveal>
       </section>
