@@ -180,26 +180,27 @@ export default function Home() {
           <div className={classes[`accordion-grid`]}>
             <ContentReveal delay={0.5}>
               <Accordion
-                header='Can I cancel my membership?'
-                content='Iaculis id magna arcu nibh magna orci nibh. Lorem donec arcu imperdiet sodales ut non praesent tristique est. Nunc vulputate morbi elit convallis. Consectetur etiam enim dignissim arcu elementum. Arcu orci, malesuada proin ac. Ornare odio morbi laoreet.'
+                header='Where is Sombor?'
+                content="Sombor is a city located in the northern part of Serbia, near the borders with Hungary and Croatia. It is approximately a two-hour drive from Belgrade's Nikola Tesla Airport.
+"
               />
             </ContentReveal>
             <ContentReveal delay={0.5}>
               <Accordion
-                header='Can I cancel my membership?'
-                content='Iaculis id magna arcu nibh magna orci nibh. Lorem donec arcu imperdiet sodales ut non praesent tristique est. Nunc vulputate morbi elit convallis. Consectetur etiam enim dignissim arcu elementum. Arcu orci, malesuada proin ac. Ornare odio morbi laoreet.'
+                header='Is it possible to have a training session at another location?'
+                content='Yes, Siniša has conducted many individual training sessions across Europe, and sessions can be arranged at other locations upon request.'
               />
             </ContentReveal>
             <ContentReveal delay={0.5}>
               <Accordion
-                header='Can I cancel my membership?'
-                content='Iaculis id magna arcu nibh magna orci nibh. Lorem donec arcu imperdiet sodales ut non praesent tristique est. Nunc vulputate morbi elit convallis. Consectetur etiam enim dignissim arcu elementum. Arcu orci, malesuada proin ac. Ornare odio morbi laoreet.'
+                header='What age groups does Siniša work with?'
+                content='Siniša works with players of all age groups, from young beginners to professional athletes, customizing the training to meet their specific needs.'
               />
             </ContentReveal>
             <ContentReveal delay={0.5}>
               <Accordion
-                header='Can I cancel my membership?'
-                content='Iaculis id magna arcu nibh magna orci nibh. Lorem donec arcu imperdiet sodales ut non praesent tristique est. Nunc vulputate morbi elit convallis. Consectetur etiam enim dignissim arcu elementum. Arcu orci, malesuada proin ac. Ornare odio morbi laoreet.'
+                header='Do I need to bring my own equipment for the training sessions?'
+                content='No, the facility is fully equipped with everything needed for basketball training. However, you are welcome to bring your own gear if you prefer.'
               />
             </ContentReveal>
           </div>
