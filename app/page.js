@@ -12,6 +12,7 @@ import camp from '../public/camp.svg'
 import gym from '../public/gym.jpg'
 import Accordion from '@/components/ui/accordion'
 import ContentReveal from '@/components/ui/content-reveal'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -82,55 +83,61 @@ export default function Home() {
           </ContentReveal>
           <div className={classes.grid}>
             <ContentReveal height={'0px'} minHeight={'40vh'} delay={0.5}>
-              <div className={classes[`service-one`]}>
-                <div className={classes[`service-img`]}>
-                  <Image src={services1} alt='services' />
+              <Link href='/about#individual'>
+                <div className={classes[`service-one`]}>
+                  <div className={classes[`service-img`]}>
+                    <Image src={services1} alt='services' />
+                  </div>
+                  <div className={classes[`services-text`]}>
+                    <Image src={personal} alt='services' />
+                    <h4>PERSONAL TRAINING</h4>
+                  </div>
+                  <p>
+                    Siniša’s individual coaching has been instrumental in
+                    developing elite players like Nikola Jokić, while guiding
+                    top basketball talents across Europe to achieve success at
+                    both national and international levels.
+                  </p>
                 </div>
-                <div className={classes[`services-text`]}>
-                  <Image src={personal} alt='services' />
-                  <h4>PERSONAL TRAINING</h4>
-                </div>
-                <p>
-                  Siniša’s individual coaching has been instrumental in
-                  developing elite players like Nikola Jokić, while guiding top
-                  basketball talents across Europe to achieve success at both
-                  national and international levels.
-                </p>
-              </div>
+              </Link>
             </ContentReveal>
             <ContentReveal height={'0px'} minHeight={'40vh'} delay={0.5}>
-              <div className={classes[`service-two`]}>
-                <div className={classes[`service-img`]}>
-                  <Image src={services2} alt='services' />
+              <Link href='/about#group'>
+                <div className={classes[`service-two`]}>
+                  <div className={classes[`service-img`]}>
+                    <Image src={services2} alt='services' />
+                  </div>
+                  <div className={classes[`services-text`]}>
+                    <Image src={camp} alt='services' />
+                    <h4>Basketball camp</h4>
+                  </div>
+                  <p>
+                    In his accomplished career, Siniša has participated in over
+                    15 basketball camps across Europe, gaining valuable
+                    experience experience working alongside legendary coaches
+                    such as Željko Obradović and Ranko Žeravica.
+                  </p>
                 </div>
-                <div className={classes[`services-text`]}>
-                  <Image src={camp} alt='services' />
-                  <h4>Basketball camp</h4>
-                </div>
-                <p>
-                  In his accomplished career, Siniša has participated in over 15
-                  basketball camps across Europe, gaining valuable experience
-                  working alongside legendary coaches such as Željko Obradović
-                  and Ranko Žeravica.
-                </p>
-              </div>
+              </Link>
             </ContentReveal>
             <ContentReveal height={'0px'} minHeight={'40vh'} delay={0.5}>
-              <div className={classes[`service-three`]}>
-                <div className={classes[`service-img`]}>
-                  <Image src={services3} alt='services' />
+              <Link href='/about#group'>
+                <div className={classes[`service-three`]}>
+                  <div className={classes[`service-img`]}>
+                    <Image src={services3} alt='services' />
+                  </div>
+                  <div className={classes[`services-text`]}>
+                    <Image src={team} alt='services' />
+                    <h4>Team</h4>
+                  </div>
+                  <p>
+                    Siniša is a licensed FIBA coach who has led both senior and
+                    youth teams, achieving an impressive 80% win rate as a head
+                    coach throughout his career, including the national team of
+                    Vojvodina, KK Vrbas, and many others.
+                  </p>
                 </div>
-                <div className={classes[`services-text`]}>
-                  <Image src={team} alt='services' />
-                  <h4>Team</h4>
-                </div>
-                <p>
-                  Siniša is a licensed FIBA coach who has led both senior and
-                  youth teams, achieving an impressive 80% win rate as a head
-                  coach throughout his career, including the national team of
-                  Vojvodina, KK Vrbas, and many others.
-                </p>
-              </div>
+              </Link>
             </ContentReveal>
           </div>
         </div>

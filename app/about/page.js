@@ -16,7 +16,7 @@ export default function About() {
         <Image src={trainingSession} alt='training session' />
         <Image src={trainingSession} alt='training session' />
       </div>
-      <div className={classes.story}>
+      <div className={classes.story} id='individual'>
         <div className={classes.content}>
           <div className={classes.heading}>
             <div className='subtitle'>
@@ -45,7 +45,7 @@ export default function About() {
         <Image src={trainingSession} alt='training session' />
         <Image src={trainingSession} alt='training session' />
       </div>
-      <div className={classes.story}>
+      <div className={classes.story} id='group'>
         <div className={classes.content}>
           <div className={classes.heading}>
             <div className='subtitle'>
