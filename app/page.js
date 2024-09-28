@@ -200,7 +200,7 @@ export default function Home() {
             <ContentReveal delay={0.5}>
               <Accordion
                 header='Do I need to bring my own equipment for the training sessions?'
-                content='No, the facility is fully equipped with everything needed for basketball training. However, you are welcome to bring your own gear if you prefer.'
+                content="No, the facility is fully outfitted with all the necessary equipment for basketball training. However, if you prefer, you're welcome to bring your own gear."
               />
             </ContentReveal>
           </div>
