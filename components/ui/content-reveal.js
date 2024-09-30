@@ -10,9 +10,10 @@ export default function ContentReveal({
   minHeight = 0,
   height = '100%',
   scale = 1,
+  width,
 }) {
   return (
-    <div style={{ minHeight }}>
+    <div style={{ minHeight, width }}>
       <motion.div
         initial={{ opacity: 0, height, scale }}
         whileInView={{ opacity: 1, height: '100%', scale: 1 }}

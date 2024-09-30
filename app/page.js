@@ -151,17 +151,20 @@ export default function Home() {
             </div>
             <h2>Comprehensive Basketball Training in Sombor</h2>
             <p>
-              Our training facility in Sombor is fully equipped to support the
-              holistic development of basketball players. With a dedicated gym
-              for strength and conditioning, a professional basketball court,
-              and access to experienced massage therapists, we provide all the
-              necessary resources to enhance your athletic performance. Whether
-              you're refining your skills on the court or focusing on recovery,
-              our environment ensures you have everything you need to succeed.
+              Our Sombor training facility offers everything needed for the
+              complete development of basketball players. With a dedicated gym,
+              professional court, and experienced massage therapists, we provide
+              the tools for both skill improvement and recovery, ensuring peak
+              athletic performance.
             </p>
           </div>
         </ContentReveal>
-        <ContentReveal height={'0px'} minHeight={'40vh'} delay={0.5}>
+        <ContentReveal
+          height={'0px'}
+          minHeight={'40vh'}
+          delay={0.5}
+          width={'100%'}
+        >
           <div className={classes[`img-block`]}>
             <Image src={gym} alt='services' />
           </div>
