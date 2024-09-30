@@ -21,6 +21,7 @@
 
   .images-three {
     @include grid(3, center);
+
     @include md {
       @include grid(1, center);
     }
@@ -33,7 +34,8 @@
 
     img {
       width: 100%;
-      height: 100%;
+      height: auto;
+      min-height: 25vh;
     }
   }
 
