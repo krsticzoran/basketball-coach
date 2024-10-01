@@ -10,7 +10,7 @@ import about5 from '../../public/about5.jpg'
 import about6 from '../../public/about6.jpg'
 import about7 from '../../public/about7.jpg'
 import about8 from '../../public/about8.jpg'
-// promeniti naslov attain i srediti drugacije text za male ekrane i videti u jednom nalsovu na mob jede zadnje slovo
+// change about 4 & about 6
 export default function About() {
   return (
     <div className={classes.about}>
@@ -26,25 +26,25 @@ export default function About() {
           <Image src={about1} alt='training session' />
         </ContentReveal>
         <ContentReveal height={'0px'} minHeight={'25vh'} delay={0.5}>
-          <Image src={about2} alt='training session' />
+          <Image src={about3} alt='training session' />
         </ContentReveal>
         <ContentReveal height={'0px'} minHeight={'25vh'} delay={0.5}>
-          <Image src={about3} alt='training session' />
+          <Image src={about2} alt='training session' />
         </ContentReveal>
       </div>
       <div className={classes.story} id='individual'>
         <div className={classes.content}>
-          <div className={classes.heading}>
-            <ContentReveal delay={0.5}>
+          <ContentReveal delay={0.5}>
+            <div className={classes.heading}>
               <div className='subtitle'>
                 <div className='line'></div>
-                <div className='text'>my story</div>
+                <div className='text'>individual practice</div>
                 <div className='line'></div>
               </div>
 
               <h2>Siniša's Coaching Journey</h2>
-            </ContentReveal>
-          </div>
+            </div>
+          </ContentReveal>
           <div className={classes.text}>
             <ContentReveal delay={0.5}>
               <p>
@@ -82,14 +82,16 @@ export default function About() {
       </div>
       <div className={classes.story} id='group'>
         <div className={classes.content}>
-          <div className={classes.heading}>
-            <div className='subtitle'>
-              <div className='line'></div>
-              <div className='text'>My misson</div>
-              <div className='line'></div>
+          <ContentReveal delay={0.5}>
+            <div className={classes.heading}>
+              <div className='subtitle'>
+                <div className='line'></div>
+                <div className='text'>Group Training</div>
+                <div className='line'></div>
+              </div>
+              <h2>Camps and Team Coaching</h2>
             </div>
-            <h2>ATTAIN MAXIMUM PERFORMANCE</h2>
-          </div>
+          </ContentReveal>
           <div className={classes.text}>
             <ContentReveal delay={0.5}>
               <p>
