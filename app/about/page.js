@@ -10,7 +10,8 @@ import about5 from '../../public/about5.jpg'
 import about6 from '../../public/about6.jpg'
 import about7 from '../../public/about7.jpg'
 import about8 from '../../public/about8.jpg'
-// change about 4 & about 6
+import ImageCoverReveal from '@/components/ui/image-cover-reveal'
+
 export default function About() {
   return (
     <div className={classes.about}>
@@ -22,15 +23,15 @@ export default function About() {
         </div>
       </ContentReveal>
       <div className={`${classes['images-three']} ${classes.images}`}>
-        <ContentReveal height={'0px'} minHeight={'25vh'} delay={0.5}>
+        <ImageCoverReveal delay={0.5}>
           <Image src={about1} alt='training session' />
-        </ContentReveal>
-        <ContentReveal height={'0px'} minHeight={'25vh'} delay={0.5}>
+        </ImageCoverReveal>
+        <ImageCoverReveal delay={0.5}>
           <Image src={about3} alt='training session' />
-        </ContentReveal>
-        <ContentReveal height={'0px'} minHeight={'25vh'} delay={0.5}>
+        </ImageCoverReveal>
+        <ImageCoverReveal delay={0.5}>
           <Image src={about2} alt='training session' />
-        </ContentReveal>
+        </ImageCoverReveal>
       </div>
       <div className={classes.story} id='individual'>
         <div className={classes.content}>
@@ -73,12 +74,12 @@ export default function About() {
         </div>
       </div>
       <div className={`${classes['images-two']} ${classes.images}`}>
-        <ContentReveal height={'0px'} minHeight={'30vh'} delay={0.5}>
+        <ImageCoverReveal delay={0.5}>
           <Image src={about4} alt='training session' />
-        </ContentReveal>
-        <ContentReveal height={'0px'} minHeight={'30vh'} delay={0.5}>
+        </ImageCoverReveal>
+        <ImageCoverReveal delay={0.5}>
           <Image src={about5} alt='training session' />
-        </ContentReveal>
+        </ImageCoverReveal>
       </div>
       <div className={classes.story} id='group'>
         <div className={classes.content}>
@@ -123,15 +124,15 @@ export default function About() {
         </div>
       </div>
       <div className={`${classes['images-three']} ${classes.images}`}>
-        <ContentReveal height={'0px'} minHeight={'25vh'} delay={0.5}>
+        <ImageCoverReveal delay={0.5}>
           <Image src={about7} alt='training session' />
-        </ContentReveal>
-        <ContentReveal height={'0px'} minHeight={'25vh'} delay={0.5}>
+        </ImageCoverReveal>
+        <ImageCoverReveal delay={0.5}>
           <Image src={about6} alt='training session' />
-        </ContentReveal>
-        <ContentReveal height={'0px'} minHeight={'25vh'} delay={0.5}>
+        </ImageCoverReveal>
+        <ImageCoverReveal delay={0.5}>
           <Image src={about8} alt='training session' />
-        </ContentReveal>
+        </ImageCoverReveal>
       </div>
       <div className={classes.session}>
         <div className={classes.content}>

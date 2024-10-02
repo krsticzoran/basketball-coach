@@ -13,6 +13,7 @@ import gym from '../public/gym.jpg'
 import Accordion from '@/components/ui/accordion'
 import ContentReveal from '@/components/ui/content-reveal'
 import Link from 'next/link'
+import ImageCoverReveal from '@/components/ui/image-cover-reveal'
 
 export default function Home() {
   return (
@@ -42,33 +43,39 @@ export default function Home() {
         </div>
       </section>
       <section className={classes.about}>
-        <ContentReveal height={'0px'} minHeight={'40vh'} delay={0.5}>
-          <div className={classes.container}>
-            <div className={classes['img-container']}>
+        <div className={classes.container}>
+          <div className={classes['img-container']}>
+            <ImageCoverReveal delay={0.5} color={'#141414'}>
               <Image src={welcomeImg} alt='Sinisa Savovic' />
-            </div>
+            </ImageCoverReveal>
+          </div>
 
-            <div className={classes['block-right']}>
+          <div className={classes['block-right']}>
+            <ContentReveal delay={0.5}>
               <div className='subtitle'>
                 <div className='line'></div>
                 <div className='text'>about</div>
               </div>
+            </ContentReveal>
+            <ContentReveal delay={0.5}>
               <h2>
                 Meet Siniša Savović: A Trailblazer in Basketball Excellence
               </h2>
+            </ContentReveal>
+            <ContentReveal delay={0.5}>
               <p>
-                Sinisa Savovic, a visionary leader in the realm of basketball
-                coaching, embodies a legacy of unparalleled expertise and
-                dedication. With a career spanning decades, his influence has
-                shaped the trajectories of countless athletes, including the
-                likes of NBA star Nikola Jokic. Dive deeper into Sinisa's
-                journey, philosophy, and unparalleled impact in the world of
-                basketball.
+                Siniša Savović, a visionary basketball coach, has shaped the
+                careers of countless athletes, including NBA star Nikola Jokic.
+                With decades of expertise, his leadership and dedication have
+                left a lasting impact on the sport. Discover more about Sinisa's
+                journey and coaching philosophy.
               </p>
+            </ContentReveal>
+            <ContentReveal delay={0.5}>
               <Button href='/about/'>Find Out More</Button>
-            </div>
+            </ContentReveal>
           </div>
-        </ContentReveal>
+        </div>
       </section>
       <section className={classes.services}>
         <div className={classes.container}>
@@ -77,73 +84,90 @@ export default function Home() {
               <div className='line'></div>
               <div className='text'>services</div>
             </div>
+          </ContentReveal>
+          <ContentReveal delay={0.5}>
             <h2 className={classes.heading}>
               HELPING YOU REACH HIGHER AND ACHIEVE MORE
             </h2>
           </ContentReveal>
+
           <div className={classes.grid}>
-            <ContentReveal height={'0px'} minHeight={'40vh'} delay={0.5}>
-              <Link href='/about#individual'>
-                <div className={classes[`service-one`]}>
-                  <div className={classes[`service-img`]}>
+            <Link href='/about#individual'>
+              <div className={classes[`service-one`]}>
+                <div className={classes[`service-img`]}>
+                  <ImageCoverReveal delay={0.5}>
                     <Image src={services1} alt='services' />
-                  </div>
+                  </ImageCoverReveal>
+                </div>
+                <ContentReveal delay={0.5}>
                   <div className={classes[`services-text`]}>
                     <Image src={personal} alt='services' />
+
                     <h4>PERSONAL TRAINING</h4>
                   </div>
+
                   <p>
                     Siniša’s individual coaching has been instrumental in
                     developing elite players like Nikola Jokić, while guiding
                     top basketball talents across Europe to achieve success at
                     both national and international levels.
                   </p>
-                </div>
-              </Link>
-            </ContentReveal>
-            <ContentReveal height={'0px'} minHeight={'40vh'} delay={0.5}>
-              <Link href='/about#group'>
-                <div className={classes[`service-two`]}>
-                  <div className={classes[`service-img`]}>
+                </ContentReveal>
+              </div>
+            </Link>
+
+            <Link href='/about#group'>
+              <div className={classes[`service-two`]}>
+                <div className={classes[`service-img`]}>
+                  <ImageCoverReveal delay={0.5}>
                     <Image src={services2} alt='services' />
-                  </div>
+                  </ImageCoverReveal>
+                </div>
+                <ContentReveal delay={0.5}>
                   <div className={classes[`services-text`]}>
                     <Image src={camp} alt='services' />
+
                     <h4>Basketball camp</h4>
                   </div>
+
                   <p>
                     In his accomplished career, Siniša has participated in over
                     15 basketball camps across Europe, gaining valuable
                     experience experience working alongside legendary coaches
                     such as Željko Obradović and Ranko Žeravica.
                   </p>
-                </div>
-              </Link>
-            </ContentReveal>
-            <ContentReveal height={'0px'} minHeight={'40vh'} delay={0.5}>
-              <Link href='/about#group'>
-                <div className={classes[`service-three`]}>
-                  <div className={classes[`service-img`]}>
+                </ContentReveal>
+              </div>
+            </Link>
+
+            <Link href='/about#group'>
+              <div className={classes[`service-three`]}>
+                <div className={classes[`service-img`]}>
+                  <ImageCoverReveal delay={0.5}>
                     <Image src={services3} alt='services' />
-                  </div>
+                  </ImageCoverReveal>
+                </div>
+                <ContentReveal delay={0.5}>
                   <div className={classes[`services-text`]}>
                     <Image src={team} alt='services' />
+
                     <h4>Team</h4>
                   </div>
+
                   <p>
                     Siniša is a licensed FIBA coach who has led both senior and
                     youth teams, achieving an impressive 80% win rate as a head
                     coach throughout his career, including the national team of
                     Vojvodina, KK Vrbas, and many others.
                   </p>
-                </div>
-              </Link>
-            </ContentReveal>
+                </ContentReveal>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
       <section className={classes.full}>
-        <ContentReveal height={'0px'} minHeight={'40vh'} delay={0.5}>
+        <ContentReveal delay={0.5}>
           <div className={classes[`left-block`]}>
             <div className='subtitle'>
               <div className='line'></div>
@@ -159,16 +183,12 @@ export default function Home() {
             </p>
           </div>
         </ContentReveal>
-        <ContentReveal
-          height={'0px'}
-          minHeight={'40vh'}
-          delay={0.5}
-          width={'100%'}
-        >
-          <div className={classes[`img-block`]}>
+
+        <div className={classes[`img-block`]}>
+          <ImageCoverReveal delay={0.5} color={'#141414'}>
             <Image src={gym} alt='services' />
-          </div>
-        </ContentReveal>
+          </ImageCoverReveal>
+        </div>
       </section>
 
       <section className={classes.accordion}>
@@ -183,7 +203,7 @@ export default function Home() {
               <h2>
                 FREQUENTLY ASKED&nbsp;
                 <br />
-                QUESTIONS
+                <span>QUESTIONS</span>
               </h2>
             </div>
           </ContentReveal>

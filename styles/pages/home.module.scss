@@ -231,7 +231,8 @@
     }
 
     h2 {
-      @include spacing(padding-bottom, 3);
+      @include spacing(padding-bottom, 4);
+      text-align: center;
     }
 
     .accordion-grid {

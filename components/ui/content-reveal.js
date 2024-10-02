@@ -16,7 +16,7 @@ export default function ContentReveal({
     <div style={{ minHeight, width }}>
       <motion.div
         initial={{ opacity: 0, height, scale }}
-        whileInView={{ opacity: 1, height: '100%', scale: 1 }}
+        whileInView={{ opacity: 1, height: 'auto', scale: 1 }}
         transition={{
           duration,
           delay,

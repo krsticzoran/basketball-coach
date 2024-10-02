@@ -27,15 +27,12 @@
     }
   }
   .images {
-    border-top: 1px solid $additional-border;
-
     padding: 4vmin;
     gap: 4vmin;
 
     img {
       width: 100%;
       height: auto;
-      min-height: 25vh;
     }
   }
 
