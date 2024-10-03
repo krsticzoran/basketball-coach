@@ -14,6 +14,7 @@ export default async function Gallery({ params }) {
   return (
     <>
       <Modal params={params} data={data} />
+
       <div className={classes.gallery}>
         {data.map((image, index) => (
           <div key={index} className={classes['gallery-item']}>
