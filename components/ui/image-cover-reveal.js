@@ -12,7 +12,7 @@ export default function ImageCoverReveal({
   const [overlayVisible, setOverlayVisible] = useState(true)
 
   return (
-    <div style={{ position: 'relative', overflow: 'hidden' }}>
+    <div style={{ position: 'relative', overflow: 'hidden', height: '100%' }}>
       {overlayVisible && (
         <motion.div
           style={{
@@ -32,7 +32,7 @@ export default function ImageCoverReveal({
           onAnimationComplete={() => setOverlayVisible(false)}
         />
       )}
-      <motion.div>{children}</motion.div>
+      <motion.div style={{ height: '100%' }}>{children}</motion.div>
     </div>
   )
 }

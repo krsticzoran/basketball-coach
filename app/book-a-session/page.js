@@ -10,6 +10,7 @@ import FormSubmitButton from '@/components/ui/form-submit'
 import trainingSession from '../../public/book-a-session.jpg'
 import { sendingEmail } from '@/lib/action'
 import ContentReveal from '@/components/ui/content-reveal'
+import ImageCoverReveal from '@/components/ui/image-cover-reveal'
 
 const initialState = {
   message: '',
@@ -32,8 +33,8 @@ export default function Contact() {
   }, [state])
 
   return (
-    <ContentReveal minHeight={'100vh'} height={'0px'} delay={1} duration={1.5}>
-      <div className={classes.contact}>
+    <div className={classes.contact}>
+      <ContentReveal delay={0.5}>
         <div className={classes.data}>
           <div className='subtitle'>
             <div className='line'></div>
@@ -95,10 +96,13 @@ export default function Contact() {
             {message}
           </p>
         </div>
-        <div className={classes['image-container']}>
+      </ContentReveal>
+
+      <div className={classes['image-container']}>
+        <ImageCoverReveal delay={0.5}>
           <Image src={trainingSession} alt='training session' />
-        </div>
+        </ImageCoverReveal>
       </div>
-    </ContentReveal>
+    </div>
   )
 }

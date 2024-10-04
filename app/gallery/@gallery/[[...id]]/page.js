@@ -24,7 +24,7 @@ export default async function Gallery({ params }) {
                 pathname: `/gallery/${index}`,
               }}
             >
-              <ContentReveal>
+              <ContentReveal delay={0.5}>
                 <Image
                   src={image.url}
                   alt={image.name}
