@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import classes from '@/styles/pages/gallery.module.scss'
 import { getImage } from '@/lib/get-images'
 import Modal from '@/components/layout/modal'
+import ContentReveal from '@/components/ui/content-reveal'
 
 export default async function Gallery({ params }) {
   const data = await getImage()
@@ -23,12 +24,14 @@ export default async function Gallery({ params }) {
                 pathname: `/gallery/${index}`,
               }}
             >
-              <Image
-                src={image.url}
-                alt={image.name}
-                width={500}
-                height={300}
-              />
+              <ContentReveal>
+                <Image
+                  src={image.url}
+                  alt={image.name}
+                  width={500}
+                  height={300}
+                />
+              </ContentReveal>
             </Link>
           </div>
         ))}
