@@ -1,0 +1,13 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.terms {
+  padding: 17rem 7% 10rem;
+  @include container;
+  @include md {
+    padding: 14rem 7% 7rem;
+  }
+  h2 {
+    @include spacing(padding, 3, 0, 2);
+  }
+}
