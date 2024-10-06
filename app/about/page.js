@@ -43,7 +43,7 @@ export default function About() {
                 <div className='line'></div>
               </div>
 
-              <h2>Siniša's Coaching Journey</h2>
+              <h2>Siniša's Coaching Journey&nbsp;</h2>
             </div>
           </ContentReveal>
           <div className={classes.text}>
@@ -90,7 +90,7 @@ export default function About() {
                 <div className='text'>Group Training</div>
                 <div className='line'></div>
               </div>
-              <h2>Camps and Team Coaching</h2>
+              <h2>Camps and Team Coaching&nbsp;</h2>
             </div>
           </ContentReveal>
           <div className={classes.text}>
