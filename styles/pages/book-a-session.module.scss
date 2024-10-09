@@ -7,7 +7,7 @@
   align-items: stretch;
   @include lg {
     grid: none;
-    @include flex(start, center, column-reverse);
+    @include flex(flex-start, center, column-reverse);
   }
 
   .data {
