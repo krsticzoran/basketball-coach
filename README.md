@@ -4,7 +4,7 @@
 
 ## Project Status
 
-This project is in the middle stage of development.
+his project is almost complete, with only minor changes possibly needed.
 
 ## About the Coach
 
