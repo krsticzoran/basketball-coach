@@ -14,8 +14,8 @@ export const metadata = {
   title: 'Basketball Coach Siniša Savović',
   description:
     'Siniša Savović, a seasoned basketball coach, has trained numerous renowned players, including NBA MVP Nikola Jokić. Offering tailored individual training sessions.',
-  image: 'https://basketball.coach.zkrstic.com/jokic.jpeg',
-  url: 'https://basketball.coach.zkrstic.com/',
+  image: 'https://probasketballcoach.com/jokic.jpeg',
+  url: 'https://probasketballcoach.com/',
 }
 
 export default function RootLayout({ children }) {
