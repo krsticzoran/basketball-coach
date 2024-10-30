@@ -1,6 +1,6 @@
 # Basketball Coach Website
 
-[DEMO](https://basketball.coach.zkrstic.com/)<br /><br />
+[DEMO](https://probasketballcoach.com/)<br /><br />
 
 ## Project Status
 
