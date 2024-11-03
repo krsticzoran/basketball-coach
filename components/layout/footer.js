@@ -30,7 +30,7 @@ export default function Footer() {
                 <Link href='tel:+38166300775'>Call Us</Link>
               </li>
               <li>
-                <Link href='mailto:savovicsinisa@gmail.com'>Email Us</Link>
+                <Link href='mailto:savovicsinisa72@gmail.com'>Email Us</Link>
               </li>
             </ul>
           </div>
