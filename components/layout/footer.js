@@ -3,6 +3,7 @@ import classes from '@/styles/components/layout/footer.module.scss'
 import ContentReveal from '../ui/content-reveal'
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear()
   return (
     <footer className={classes.footer}>
       <ContentReveal delay={0.5}>
@@ -67,11 +68,11 @@ export default function Footer() {
       </ContentReveal>
       <ContentReveal delay={0.5}>
         <div className={classes.bottom}>
-          <div>© 2024 Pro Basketball Coach</div>
+          <div>© 2024 - {currentYear} Pro Basketball Coach</div>
           <div>
-            <Link href='https://www.linkedin.com/in/zorankrstic/'>
+            <a href='https://zkrstic.dev/' target='_blank'>
               MADE BY ZORAN KRSTIC
-            </Link>
+            </a>
           </div>
         </div>
       </ContentReveal>
